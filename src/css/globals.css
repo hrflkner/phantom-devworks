@@ -172,20 +172,59 @@ body {
   }
 }
 .fadeIn {
-  -webkit-animation: fadeIn ease 7s;
-          animation: fadeIn ease 7s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
+}
+
+/* Slide from Left to Right */
+@-webkit-keyframes slideInRight {
+  from {
+    transform: translate3d(-100%, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translate3d(-100%, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInRight {
+  -webkit-animation: slideInRight ease 2s, fadeIn ease 3s;
+          animation: slideInRight ease 2s, fadeIn ease 3s;
+}
+
+/* Slide from Right to Left */
+@-webkit-keyframes slideInLeft {
+  from {
+    transform: translate3d(100%, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(100%, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInLeft {
+  -webkit-animation: slideInLeft ease 2s, fadeIn ease 3s;
+          animation: slideInLeft ease 2s, fadeIn ease 3s;
 }
 
 /* Slide Up and Fade In */
 @-webkit-keyframes slideInUp {
   from {
     transform: translate3d(0, 105%, 0);
-    visibility: visible;
-    opacity: -1;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -194,8 +233,7 @@ body {
 @keyframes slideInUp {
   from {
     transform: translate3d(0, 105%, 0);
-    visibility: visible;
-    opacity: -1;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -210,23 +248,85 @@ body {
           animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes candyAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 152% 50%;
+  }
+}
+
+@keyframes candyAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 152% 50%;
+  }
+}
+.candy-animation {
+  background: linear-gradient(60deg, #4ac3d3 15%, #ec8282 25% 60%, #4ac3d3 90%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  -webkit-animation: candyAnimation 5s ease-in infinite;
+          animation: candyAnimation 5s ease-in infinite;
+}
+
+nav {
+  /* Layout */
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+nav a {
+  /* Layout */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  justify-content: right;
+  padding: 1rem 0.5rem;
+  /* Typography */
+  color: white;
+  font-size: 1.2vw;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  /* Design */
+  /* On Hover Bouncing Links Fix */
+  border-bottom: 1px solid white;
+}
+nav a:hover {
+  /* Design */
+  color: #ec8282;
+  border-bottom: 1px solid #4ac3d3;
+}
+
 header {
+  /* Layout */
   position: relative;
-  display: flex-start;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  margin: 3rem 4vw 8rem;
   /* Design */
   background-color: black;
 }
 
-.logo-block {
-  margin: 5vw;
-}
-
 .logo {
+  /* Layout */
   max-width: 5vw;
+  /* Typography */
   color: white;
-  font-size: 4vw;
+  font-size: 2.6vw;
   font-family: "Fredoka", sans-serif;
   font-weight: 300;
 }
@@ -235,22 +335,109 @@ header {
   /* Layout */
   display: block;
   margin: 3vw 0.5vw 0;
+  /* Typography */
   color: white;
   font-size: 1.4vw;
   font-family: "Fredoka", sans-serif;
 }
 
-.blurb {
-  height: 20vw;
-  width: 100%;
+.openingcall {
+  /* Layout */
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.openingcall h2 {
+  /* Layout */
+  margin-bottom: 4rem;
+  /* Typography */
   color: white;
+  font-family: "Fredoka", sans-serif;
+  font-size: 4vw;
+  line-height: 1;
+}
+
+.blurb {
+  /* Layout */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* Typography */
+  color: white;
+  font-size: 1.4vw;
+  font-family: "Fredoka", sans-serif;
+  line-height: 1.6;
+  /* Design */
   background-color: black;
+}
+.blurb:first-of-type {
+  margin-bottom: 2vw;
+}
+.blurb p {
+  /* Typography */
+  font-weight: 100;
+  line-height: 2;
+}
+.blurb p::first-letter {
+  /* Large First Letter */
+  font-size: 4rem;
+  /*
+  Reverse Spacing from
+  Larger Font
+  */
+  line-height: 0;
+  letter-spacing: -0.75rem;
+  margin-left: -0.8rem;
+}
+.blurb .img-fill {
+  /* Layout */
+  height: 300px;
+  /* Temp */
+  background-color: rgba(128, 128, 128, 0.308);
+  border: 1px solid red;
+}
+
+.blurb-grid {
+  /* Layout */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+  /* Typography */
+  line-height: 2;
+}
+
+.candy-gradient {
+  background: linear-gradient(60deg, #4ac3d3 35%, #ec8282 65%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.candy-blue {
+  color: #4ac3d3;
+  font-weight: 400;
+}
+
+.candy-red {
+  color: #ec8282;
+  font-weight: 400;
+}
+
+.candy-green {
+  color: #48e05d;
+  font-weight: 300;
 }
 
 .main-background-1 {
   width: 100vw;
   min-width: 1365px;
   height: auto;
+  top: 30vh;
+  z-index: -100;
 }
 
 .main-background-2 {

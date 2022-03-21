@@ -1,0 +1,47 @@
+nav {
+    /* Layout */
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        /* Layout */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    a {
+        /* Layout */
+        width: max-content;
+        display: block;
+        justify-content: right;
+        padding: 1rem 0.5rem;
+
+        /* Typography */
+        color: white;
+        font-size: 1.2vw;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+
+        /* Design */
+
+        //border-radius: 25px;
+        /* On Hover Bouncing Links Fix */
+        border-bottom: 1px solid white;
+
+        &:hover {
+            /* Design */
+            color: rgb(236, 130, 130);
+            border-bottom: 1px solid rgba(74, 195, 211, 1);
+            //box-shadow: inset 4rem 0 80px -30px rgba(74, 195, 211, 0.25);
+
+            // border-top: 1px solid rgb(74, 195, 211);
+            // border-right: 1px solid rgb(74, 195, 211);
+            // border-bottom: 1px solid rgb(236, 130, 130);
+            // border-left: 1px solid rgb(236, 130, 130);
+            // box-shadow: inset 0.5rem -1rem 1rem rgb(236, 130, 130),
+            //     inset -0.5rem 1rem 1rem rgb(74, 195, 211);
+        }
+    }
+}

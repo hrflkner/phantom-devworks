@@ -8,17 +8,40 @@
     }
 }
 .fadeIn {
-    animation: fadeIn ease 7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: fadeIn ease 3s;
+}
+
+/* Slide from Left to Right */
+@keyframes slideInRight {
+    from {
+        transform: translate3d(-100%, 100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.fadeInRight {
+    animation: slideInRight ease 2s, fadeIn ease 3s;
+}
+
+/* Slide from Right to Left */
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(100%, -100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.fadeInLeft {
+    animation: slideInLeft ease 2s, fadeIn ease 3s;
 }
 
 /* Slide Up and Fade In */
 @keyframes slideInUp {
     from {
         transform: translate3d(0, 105%, 0);
-        visibility: visible;
-        opacity: -1;
+        opacity: 0;
     }
 
     to {
@@ -29,4 +52,26 @@
     animation: slideInUp ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+@keyframes candyAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 152% 50%;
+    }
+}
+.candy-animation {
+    background: linear-gradient(
+        60deg,
+        rgb(74, 195, 211) 15%,
+        rgb(236, 130, 130) 25% 60%,
+        rgb(74, 195, 211) 90%
+    );
+    background-size: 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    animation: candyAnimation 5s ease-in infinite;
 }

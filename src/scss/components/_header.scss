@@ -1,20 +1,20 @@
 header {
+    /* Layout */
     position: relative;
-    display: flex-start;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    margin: 3rem 4vw 8rem;
 
     /* Design */
     background-color: black;
 }
-.logo-block {
-    margin: 5vw;
-}
 .logo {
+    /* Layout */
     max-width: 5vw;
 
+    /* Typography */
     color: white;
-    font-size: 4vw;
+    font-size: 2.6vw;
     font-family: 'Fredoka', sans-serif;
     font-weight: 300;
 }
@@ -22,13 +22,112 @@ header {
     /* Layout */
     display: block;
     margin: 3vw 0.5vw 0;
+
+    /* Typography */
     color: white;
     font-size: 1.4vw;
     font-family: 'Fredoka', sans-serif;
 }
+
+.openingcall {
+    /* Layout */
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    //border-left: 3px solid transparent;
+    //border-image: linear-gradient(rgb(236, 130, 130), rgb(74, 195, 211)) 1;
+    //padding-left: 2vw;
+
+    h2 {
+        /* Layout */
+        margin-bottom: 4rem;
+
+        /* Typography */
+        color: white;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 4vw;
+        line-height: 1;
+    }
+}
 .blurb {
-    height: 20vw;
-    width: 100%;
+    /* Layout */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    /* Typography */
     color: white;
+    font-size: 1.4vw;
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.6;
+
+    /* Design */
     background-color: black;
+
+    &:first-of-type {
+        margin-bottom: 2vw;
+    }
+
+    p {
+        /* Typography */
+        font-weight: 100;
+        line-height: 2;
+
+        &::first-letter {
+            /* Large First Letter */
+            font-size: 4rem;
+
+            /*
+            Reverse Spacing from
+            Larger Font
+            */
+            line-height: 0;
+            letter-spacing: -0.75rem;
+            margin-left: -0.8rem;
+        }
+    }
+    .img-fill {
+        /* Layout */
+        height: 300px;
+
+        /* Temp */
+        background-color: rgba(128, 128, 128, 0.308);
+        border: 1px solid red;
+    }
+}
+
+.blurb-grid {
+    /* Layout */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+
+    /* Typography */
+    line-height: 2;
+}
+
+.candy-gradient {
+    background: linear-gradient(
+        60deg,
+        rgb(74, 195, 211) 35%,
+        rgb(236, 130, 130) 65%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.candy-blue {
+    color: rgb(74, 195, 211);
+    font-weight: 400;
+}
+.candy-red {
+    color: rgb(236, 130, 130);
+    font-weight: 400;
+}
+.candy-green {
+    color: rgb(72, 224, 93);
+    font-weight: 300;
 }

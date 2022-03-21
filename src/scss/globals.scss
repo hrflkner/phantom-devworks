@@ -1,5 +1,6 @@
 @forward './helpers/reset';
 @forward './util/animations';
 
+@use './components/navbar';
 @use './components/header';
 @use './components/background';
