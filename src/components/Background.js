@@ -6,7 +6,7 @@ import {
     MoveIn,
     batch,
 } from 'react-scroll-motion';
-import mainBackgroundOne from '../images/phantom-design-works-main.png';
+import mainBackgroundOne from '../images/phantom-design-works-main2.png';
 //import ghost3 from '../images/body-ghost-1.png';
 import mainBackgroundTwo from '../images/phantom-dev-works-background-2.png';
 
@@ -14,9 +14,9 @@ function Background() {
     return (
         <ScrollContainer>
             <ScrollPage page={1}>
-                <Animator animation={batch(FadeIn(), MoveIn(0, 10))}>
+                <Animator animation={batch(FadeIn(), MoveIn(50, 500))}>
                     <img
-                        className="main-background-1 slideInUp"
+                        className="main-background-1"
                         src={mainBackgroundOne}
                         alt="Main Background 1"
                     />
