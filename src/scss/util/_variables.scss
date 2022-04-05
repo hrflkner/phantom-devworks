@@ -1,0 +1,70 @@
+/* Color Variables
+-------------------------------------------*/
+$candyBlue: #00d8d8;
+$darkBlue: rgb(1, 57, 59);
+
+$candyRed: #ff8e8e;
+$darkRed: rgb(87, 35, 35);
+
+$highlighterYellow: rgb(244, 255, 83);
+
+$formGrey: rgb(138, 138, 138);
+
+/* Utility Classes
+-------------------------------------------*/
+
+/* General Component Styles */
+.btn {
+    /* Layout */
+    width: max-content;
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+
+    /* Design */
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    /* Typography */
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+}
+
+/* Strengthen Link Tag */
+.strength {
+    border-bottom: 3px solid white;
+
+    &:hover {
+        border-color: $highlighterYellow;
+    }
+}
+
+/* Text Highlighters 
+-------------------------------------------*/
+.candy-gradient {
+    background: linear-gradient(
+        60deg,
+        rgb(74, 195, 211) 35%,
+        rgb(236, 130, 130) 65%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.highlight {
+    /* Typography */
+    color: $highlighterYellow;
+    font-weight: 500;
+}
+.candy-blue {
+    color: $candyBlue;
+    font-weight: 400;
+}
+.candy-red {
+    color: $candyRed;
+    font-weight: 400;
+}
+// .candy-green {
+//     color: rgb(72, 224, 93);
+//     font-weight: 300;
+// }
