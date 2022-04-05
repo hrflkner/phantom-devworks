@@ -1,0 +1,85 @@
+.production-timeline {
+    /* Layout */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    & * {
+        /* General Typography */
+        color: white;
+        font-family: Fredoka, serif;
+        line-height: 2;
+    }
+    h2 {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    /* Timeline Card Styles 
+    ------------------------*/
+    .timeline-block-header {
+        /* Layout  */
+        margin: 0 auto 2rem;
+
+        /* Typography */
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .timeline-block-subheader {
+        font-size: 2.2rem;
+    }
+    .timeline-block-list {
+        font-size: 1.8rem;
+
+        li {
+            /* Layout */
+            margin-left: 1rem;
+
+            /* Design */
+            list-style: inside;
+        }
+    }
+}
+
+/* Custom Timeline Styles
+   Class Names Provided in react-timeline Package
+-----------------------------------------------------*/
+.timeline {
+    /* Layout */
+    width: 100%;
+
+    .container {
+        /* Layout */
+        width: 100%;
+        height: max-content;
+        padding: 0 2.5%;
+        margin-bottom: 4vw;
+
+        /* Design */
+        border: 2px solid white;
+        border-radius: 2rem;
+    }
+
+    .card {
+        /* Card Padding Fix (important overwrite)
+        -------------------------------------------*/
+        padding: 2rem !important;
+    }
+
+    .date-container {
+        /* Fix for Default Spacing (important overwrite)
+        -------------------------------------------*/
+        height: 0;
+        margin-bottom: 0 !important;
+
+        .date {
+            /* Layout */
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+
+            /* Typography */
+            font-size: 1.6rem;
+        }
+    }
+}
