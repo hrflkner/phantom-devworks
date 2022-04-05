@@ -1,0 +1,100 @@
+@use '../util/variables' as v;
+
+.upgrade-openingcall {
+    /* Layout */
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10rem;
+
+    h2 {
+        /* Layout */
+        margin-bottom: 2rem;
+
+        /* Typography */
+        color: white;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 3vw;
+        line-height: 1;
+    }
+}
+
+.upgrade-infoblock {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+
+    /* Typography */
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+
+    h4 {
+        /* Layout */
+        margin: 2rem auto 2rem;
+
+        /* Typography */
+        color: v.$candyRed;
+        font-size: 4rem;
+        font-style: italic;
+    }
+
+    dl {
+        /* Layout */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: repeat(3, max-content);
+        grid-gap: 4rem 0.5vw;
+        padding: 4rem 0;
+
+        /* Design */
+        border-top: 2px solid v.$candyBlue;
+        border-bottom: 2px solid v.$candyBlue;
+
+        & > * {
+            padding: 1rem 0;
+        }
+    }
+    .deflist-icons {
+        height: 10vw;
+        width: auto;
+        margin: auto auto;
+
+        &:nth-of-type(2) {
+            height: 8vw;
+        }
+        &:last-of-type {
+            height: 8vw;
+        }
+    }
+    dt {
+        /* Layout */
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+
+        /* Typography */
+        font-size: 2.6rem;
+        color: rgb(74, 195, 211);
+
+        /* Design */
+        border-left: 0.5rem solid rgb(236, 130, 130);
+    }
+    dd {
+        /* Layout */
+        padding-top: 2rem;
+
+        /* Typography */
+        font-size: 2.2rem;
+        line-height: 1.6;
+    }
+}
+.upgrade-secondary {
+    margin: 2vw auto 1vw;
+    background: transparent;
+    color: white;
+
+    h3 {
+        font-size: 4rem;
+    }
+}
