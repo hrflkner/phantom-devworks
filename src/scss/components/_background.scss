@@ -1,16 +1,21 @@
+.background-block {
+    position: relative;
+    height: max-content;
+}
 .main-background-1 {
+    position: relative;
     width: 100vw;
     min-width: 1365px;
     height: auto;
-    top: 30vh;
-    z-index: -100;
+
+    /* Animation Triggering Fix */
+    margin-top: -8vw;
+    padding-top: 10vw;
 }
 .main-background-2 {
     width: 100vw;
     min-width: 1365px;
     height: auto;
-    top: max(88vw, 1200px);
-    z-index: -100;
 }
 .ghost-three {
     position: fixed;
