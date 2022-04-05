@@ -1,0 +1,187 @@
+@use '../util/variables' as v;
+
+.subheader {
+    /* Layout */
+    width: 68vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    /* Typography */
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+
+    h2 {
+        /* Typography */
+        color: white;
+        font-family: 'Dosis', sans-serif;
+        font-size: 3.8vw;
+        margin-bottom: 2vw;
+    }
+    h4 {
+        /* Layout */
+        padding: 0.25vw 0.5vw;
+        margin: 0 auto;
+
+        /* Typography */
+        font-size: 2.6vw;
+        font-weight: 900;
+        -webkit-text-stroke: 1px white;
+        //text-stroke: 1px white;
+    }
+    p {
+        color: white;
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.2vw;
+        font-weight: 500;
+        line-height: 1.5;
+        padding: 1.2vw 2vw;
+    }
+}
+.subheader-optionblock {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw 5vw;
+    justify-content: center;
+    margin: 1vw 0;
+}
+
+/* Darken Paragraph Background (readability) 
+-------------------------------------------*/
+.option1 > p {
+    background: black; //radial-gradient(rgba(0, 0, 0, 0.5) 20%, black);
+    border-top: 2px solid v.$candyRed;
+    border-bottom: 2px solid v.$candyRed;
+}
+.option2 > p {
+    background: black; //radial-gradient(rgba(0, 0, 0, 0.6) 20%, black);
+    border-top: 2px solid v.$candyBlue;
+    border-bottom: 2px solid v.$candyBlue;
+}
+
+/* Option Block Layout
+-------------------------------------------*/
+.option1,
+.option2 {
+    /* Layout */
+    height: 22vw;
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: 0.5fr 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+
+    /* Design */
+    border-radius: 15px;
+
+    h4 {
+        color: black;
+        font-style: italic;
+    }
+
+    /* Slowed Zoom on Hover Animation */
+    transition: transform 0.25s;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    button {
+        /* Typography */
+        font-size: 1vw;
+    }
+}
+
+/* Button Hover Design
+-------------------------------------------*/
+.option1 button:hover {
+    color: v.$candyRed;
+    border: 2px solid v.$candyRed;
+}
+.option2 button:hover {
+    color: v.$candyBlue;
+    border: 2px solid v.$candyBlue;
+}
+
+/* Center Buttons within Options gradients
+-------------------------------------------*/
+.option1-buttons,
+.option2-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Option Block Background Designs
+-------------------------------------------*/
+.option1 {
+    /* Design */
+    background-image: linear-gradient(
+            rgba(v.$candyBlue, 0.85) 1%,
+            rgba(v.$darkBlue, 0.45) 35%
+        ),
+        url(../images/responsive-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.option2 {
+    /* Design */
+    background-image: linear-gradient(
+            rgba(v.$candyRed, 0.95) 1%,
+            rgba(v.$darkRed, 0.25) 35%
+        ),
+        url(../images/upgrade-site2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(v.$candyRed, 0.95);
+}
+
+/* Portfolio Link Design
+-------------------------------------------*/
+.option-footer {
+    /* Layout */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2vw;
+}
+.portfolio-link {
+    /* Typography */
+    font-size: 3.6rem;
+
+    /* Link Design */
+    a {
+        cursor: pointer;
+        font-weight: 900;
+    }
+}
+.copyright-block {
+    font-size: 1vw;
+}
+
+/* Return Button (Post-UserChoice Render)
+-------------------------------------------*/
+.return-btn {
+    /* Layout */
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -3vw;
+    padding-right: 4vw;
+
+    button:hover {
+        /* Typography */
+        color: v.$candyRed;
+
+        /* Design */
+        border-color: v.$candyBlue;
+    }
+}
