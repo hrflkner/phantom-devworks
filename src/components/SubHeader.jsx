@@ -43,13 +43,14 @@ function SubHeader() {
                                 >
                                     Learn More
                                 </motion.button>
-                                <motion.button
+                                <motion.a
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="btn"
+                                    href="/timeline"
                                 >
                                     Production Timeline
-                                </motion.button>
+                                </motion.a>
                             </section>
                         </section>
                         <section className="option2">
@@ -87,13 +88,18 @@ function SubHeader() {
                     <section className="option-footer">
                         <span className="portfolio-link">
                             Browse our portfolio{' '}
-                            <a href="/" className="candy-animation strength">
+                            <a
+                                href="/portfolio"
+                                className="candy-animation strength"
+                            >
                                 here
                             </a>
                             !
                         </span>
                         <section className="copyright-block">
-                            <span>&#169; 2022 - Hunter Faulkner</span>
+                            <span>
+                                &#169; 2022 - Hunter Faulkner &amp; Jiayi Liao
+                            </span>
                         </section>
                     </section>
                 </section>

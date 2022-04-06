@@ -13,9 +13,9 @@
 
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import mainBackgroundOne from '../images/phantom-design-works-main2.png';
-import mainBackgroundTwo from '../images/phantom-dev-works-background-2.png';
+import mainBackgroundTwo from '../images/phantom-dev-works-background2.png';
 
-function Background() {
+function Background({ children }) {
     const { scrollYProgress } = useViewportScroll();
     const opacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
     const offsetX = useTransform(scrollYProgress, [0.2, 0.4], [100, 0]);
@@ -49,6 +49,7 @@ function Background() {
                     alt="Main Background 1"
                 />
             </motion.section>
+            <section>{children}</section>
             <img
                 className="main-background-2"
                 src={mainBackgroundTwo}
