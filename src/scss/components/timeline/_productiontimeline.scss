@@ -16,20 +16,24 @@
         /* Typography */
         color: v.$candyBlue;
         font-size: 2vw;
-        margin-bottom: 2vw;
+        padding-bottom: 2vw;
 
         /* Design */
         border-bottom: 2px solid v.$candyRed;
     }
     p {
+        /* Layout */
         display: block;
         max-width: 80%;
         margin: 0 auto;
-        text-align: center;
+        padding-left: 2rem;
+        text-align: left;
 
+        /* Typography */
         font-size: 1.8rem;
         line-height: 1.5;
 
+        /* Split Paragraph Blocks */
         &:first-of-type {
             margin-bottom: 1.5rem;
         }
@@ -71,6 +75,16 @@
         color: v.$highlighterYellow !important;
         font-size: 1.2vw;
     }
+
+    .code-img {
+        /* Layout */
+        max-width: 100%;
+        margin: 0 2rem 2rem;
+
+        /* Design */
+        border: 1px solid white;
+        border-radius: 20px !important;
+    }
 }
 
 /* Custom Timeline Styles
@@ -83,16 +97,18 @@
     .container {
         /* Layout */
         width: 100%;
-        height: max-content;
         padding: 0 2.5%;
         margin-bottom: 4vw;
 
         /* Design */
         //border: 2px solid white;
         //border-radius: 2rem;
+        border-bottom: 2px solid v.$candyRed;
     }
 
     .card {
+        /* Layout */
+        height: fit-content !important;
         /* Card Padding Fix (important overwrite)
         -------------------------------------------*/
         padding: 2rem 1rem !important;
@@ -122,11 +138,12 @@
     }
     span.sc-iqcoie.gXtFOG.marker {
         background-color: v.$candyRed;
+        border: solid 2px v.$candyBlue;
     }
     .cea-DCY {
         background-color: transparent; // rgb(0, 54, 49);
     }
     .cea-DCY::after {
-        background-color: v.$candyRed;
+        background-color: v.$candyBlue;
     }
 }
