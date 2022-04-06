@@ -25,9 +25,15 @@ function NavBar() {
                         {/*<a href="/">Home</a>*/}
                     </li>
                     <li>
-                        <Link className="nav-link" to="/about">
+                        <a
+                            className="nav-link"
+                            href="https://reactjs-portfolio-page.firebaseapp.com/"
+                            target="_blank"
+                            noreferrer
+                            rel="noreferrer"
+                        >
                             About
-                        </Link>{' '}
+                        </a>{' '}
                     </li>
                     <li>
                         <Link className="nav-link" to="/timeline">
