@@ -2,6 +2,7 @@ import ResponsiveIcon from '../images/responsive-icon.svg.svg';
 import AccessibleIcon from '../images/accessible-icon.svg';
 import SearchableIcon from '../images/searchable-icon.svg';
 import Background from './Background';
+import WebDesignPlan from '../images/website-designplan.jpg';
 
 function UpgradeSiteOption() {
     return (
@@ -66,14 +67,30 @@ function UpgradeSiteOption() {
                     </dl>
                 </section>
             </section>
-            <Background />
-            <section className="upgrade-secondary">
-                <h3>Our Process</h3>
-                <p>
-                    We can upgrade your existing site and build on it any way
-                    that you like!
-                </p>
-            </section>
+            <Background>
+                <section className="upgrade-secondary">
+                    <h3>Update your design and content</h3>
+                    <p>
+                        We can upgrade your existing site and build on it any
+                        way that you like!
+                    </p>
+                    <section className="upgrade-secondary-imgblock">
+                        <img
+                            className="webdesign-plan-img"
+                            src={WebDesignPlan}
+                            alt="Website Design Plan"
+                        />
+                        <p>
+                            It's necessary to refresh the design and text
+                            content of a website as markets change. Its
+                            important to keep the codebase up to date as well.
+                            Though the technologies behind the web are changing
+                            fast, we keep up to date with the latest standards
+                            of development.
+                        </p>
+                    </section>
+                </section>
+            </Background>
         </>
     );
 }
