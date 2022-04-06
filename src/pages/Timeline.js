@@ -4,7 +4,7 @@ export const Timeline = () => {
     return (
         <>
             <section className="production-timeline">
-                <h2>Timeline</h2>
+                <h2>Typical Project Timeline</h2>
                 <TimeLine />
             </section>
         </>
