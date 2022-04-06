@@ -1,3 +1,5 @@
+@use '../../util/variables' as v;
+
 .production-timeline {
     /* Layout */
     width: 60%;
@@ -7,13 +9,30 @@
 
     & * {
         /* General Typography */
-        color: white;
         font-family: Fredoka, serif;
         line-height: 2;
     }
     h2 {
+        /* Typography */
+        color: v.$candyBlue;
         font-size: 2vw;
         margin-bottom: 2vw;
+
+        /* Design */
+        border-bottom: 2px solid v.$candyRed;
+    }
+    p {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        font-size: 1.8rem;
+        line-height: 1.5;
+
+        &:first-of-type {
+            margin-bottom: 1.5rem;
+        }
     }
 
     /* Timeline Card Styles 
@@ -23,6 +42,7 @@
         margin: 0 auto 2rem;
 
         /* Typography */
+        color: v.$candyRed;
         font-size: 3rem;
         line-height: 1;
     }
@@ -39,6 +59,17 @@
             /* Design */
             list-style: inside;
         }
+    }
+
+    /* Quote Link */
+    .sample-quote {
+        /* Layout */
+        display: block;
+        margin: 0.5rem auto 0;
+
+        /* Typography */
+        color: v.$highlighterYellow !important;
+        font-size: 1.2vw;
     }
 }
 
@@ -57,14 +88,16 @@
         margin-bottom: 4vw;
 
         /* Design */
-        border: 2px solid white;
-        border-radius: 2rem;
+        //border: 2px solid white;
+        //border-radius: 2rem;
     }
 
     .card {
         /* Card Padding Fix (important overwrite)
         -------------------------------------------*/
-        padding: 2rem !important;
+        padding: 2rem 1rem !important;
+        background-color: rgb(1, 51, 58) !important;
+        border: 2px ridge v.$candyRed;
     }
 
     .date-container {
@@ -79,7 +112,21 @@
             padding-right: 0.75rem;
 
             /* Typography */
+            color: v.$candyRed;
             font-size: 1.6rem;
+
+            /* Design */
+            background-color: black;
+            border: 2px solid v.$candyBlue;
         }
+    }
+    span.sc-iqcoie.gXtFOG.marker {
+        background-color: v.$candyRed;
+    }
+    .cea-DCY {
+        background-color: transparent; // rgb(0, 54, 49);
+    }
+    .cea-DCY::after {
+        background-color: v.$candyRed;
     }
 }
