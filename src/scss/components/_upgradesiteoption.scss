@@ -90,11 +90,52 @@
     }
 }
 .upgrade-secondary {
+    /* Layout */
     margin: 2vw auto 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: max-content;
+
+    /* Layout */
+    font-family: Fredoka, serif;
+
+    /* Design */
     background: transparent;
-    color: white;
 
     h3 {
+        /* Typography */
+        color: v.$candyRed;
         font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .upgrade-secondary-imgblock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 0 5rem;
+        }
+    }
+    .webdesign-plan-img {
+        max-width: 40%;
+        height: auto;
+        max-height: 35rem;
+        margin: 2rem auto;
+
+        /* Design */
+        border-radius: 15px;
+    }
+    p {
+        /* Typography */
+        color: v.$candyBlue;
+        font-size: 2.2rem;
+        line-height: 2;
+
+        &:first-of-type {
+            /* Layout */
+            margin-bottom: 2rem;
+        }
     }
 }

@@ -53,6 +53,7 @@
 }
 
 /* Darken Paragraph Background (readability) 
+   Alternate Colored Borders
 -------------------------------------------*/
 .option1 > p {
     background: black; //radial-gradient(rgba(0, 0, 0, 0.5) 20%, black);
@@ -96,11 +97,20 @@
         /* Typography */
         font-size: 1vw;
     }
+
+    /* Option 1 Link */
+    a {
+        text-decoration: none;
+        font-size: 1vw;
+        font-family: Fredoka, serif;
+        font-weight: 400;
+    }
 }
 
 /* Button Hover Design
 -------------------------------------------*/
-.option1 button:hover {
+.option1 button:hover,
+.option1 a:hover {
     color: v.$candyRed;
     border: 2px solid v.$candyRed;
 }
