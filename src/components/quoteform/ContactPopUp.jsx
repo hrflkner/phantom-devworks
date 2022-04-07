@@ -124,17 +124,17 @@ function ContactPopUpForm({ closePopUp }) {
                                 placeholder="Description (ex: Type of Business, Purpose for site, Design Ideas, etc...)"
                             />
                         </section>
-                        <motion.button
+                        <button
                             className="btn submit-btn"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            // whileHover={{ scale: 1.05 }}
+                            // whileTap={{ scale: 0.95 }}
                             onClick={() => {
                                 handleSubmit();
                                 closePopUp();
                             }}
                         >
                             Submit
-                        </motion.button>
+                        </button>
                     </form>
                 </motion.section>
             </Backdrop>
