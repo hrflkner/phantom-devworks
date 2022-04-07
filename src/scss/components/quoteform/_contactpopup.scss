@@ -62,7 +62,7 @@
         /* Row 3 */
         grid-area: text2;
     }
-    .submit-block {
+    .submit-btn {
         /* Row 4 */
         grid-area: submit;
     }
@@ -173,14 +173,17 @@
 
     /* Form Row 4
     ----------------------------------------------------*/
-    .submit-block {
-        /* Layout */
-        height: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // .submit-block {
+    //     /* Layout */
+    //     height: 5rem;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
     .submit-btn {
+        /* Layout */
+        margin: auto auto;
+
         /* Typography */
         color: white;
         font-size: 1.4rem;

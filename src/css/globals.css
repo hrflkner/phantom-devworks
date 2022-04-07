@@ -409,7 +409,7 @@ body {
   /* Row 3 */
   grid-area: text2;
 }
-.contact-popup .submit-block {
+.contact-popup .submit-btn {
   /* Row 4 */
   grid-area: submit;
 }
@@ -509,14 +509,9 @@ body {
 .contact-popup .text-description::placeholder {
   color: rgb(138, 138, 138);
 }
-.contact-popup .submit-block {
-  /* Layout */
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .contact-popup .submit-btn {
+  /* Layout */
+  margin: auto auto;
   /* Typography */
   color: white;
   font-size: 1.4rem;

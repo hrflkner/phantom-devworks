@@ -53,6 +53,11 @@ function ContactPopUpForm({ closePopUp }) {
                         method="POST"
                     >
                         <section className="input-block">
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="Web Project Inquiry"
+                            />
                             <span>First name:</span>
                             <input
                                 type="text"
@@ -113,22 +118,15 @@ function ContactPopUpForm({ closePopUp }) {
                                 placeholder="Description (ex: Type of Business, Purpose for site, Design Ideas, etc...)"
                             />
                         </section>
-                        <section className="submit-block">
-                            <input
-                                type="hidden"
-                                name="_subject"
-                                value="Web Project Inquiry"
-                            />
-                            <motion.button
-                                className="btn submit-btn"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                onClick={closePopUp}
-                                type="submit"
-                            >
-                                Submit
-                            </motion.button>
-                        </section>
+                        <motion.button
+                            className="btn submit-btn"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={closePopUp}
+                            type="submit"
+                        >
+                            Submit
+                        </motion.button>
                     </form>
                 </motion.section>
             </Backdrop>
