@@ -53,6 +53,7 @@ function ContactPopUpForm({ closePopUp }) {
                             <span>First name:</span>
                             <input
                                 type="text"
+                                name="First Name"
                                 placeholder="First name"
                                 required
                             />
@@ -61,6 +62,7 @@ function ContactPopUpForm({ closePopUp }) {
                             <span>Last name:</span>
                             <input
                                 type="text"
+                                name="Last Name"
                                 placeholder="Last name"
                                 required
                             />
@@ -69,6 +71,7 @@ function ContactPopUpForm({ closePopUp }) {
                             <span>Email:</span>
                             <input
                                 type="text"
+                                name="Email"
                                 placeholder="Email address"
                                 required
                             />
@@ -80,7 +83,7 @@ function ContactPopUpForm({ closePopUp }) {
                                     <input
                                         type="radio"
                                         id="service1"
-                                        name="contact"
+                                        name="Upgrade Site"
                                         value="upgrade"
                                         required
                                     />
@@ -90,7 +93,7 @@ function ContactPopUpForm({ closePopUp }) {
                                     <input
                                         type="radio"
                                         id="service2"
-                                        name="contact"
+                                        name="New Site"
                                         value="upgrade"
                                         required
                                     />
@@ -103,6 +106,7 @@ function ContactPopUpForm({ closePopUp }) {
                             <textarea
                                 className="text-description"
                                 type="text"
+                                name="Description"
                                 placeholder="Description (ex: Type of Business, Purpose for site, Design Ideas, etc...)"
                             />
                         </section>
@@ -117,7 +121,7 @@ function ContactPopUpForm({ closePopUp }) {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={closePopUp}
-                                action="submit"
+                                action="https://formsubmit.co/phantom.devworks@gmail.com"
                                 method="POST"
                                 type="submit"
                             >
