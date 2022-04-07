@@ -51,15 +51,27 @@ function ContactPopUpForm({ closePopUp }) {
                     <form>
                         <section className="input-block">
                             <span>First name:</span>
-                            <input type="text" placeholder="First name" />
+                            <input
+                                type="text"
+                                placeholder="First name"
+                                required
+                            />
                         </section>
                         <section className="input-block">
                             <span>Last name:</span>
-                            <input type="text" placeholder="Last name" />
+                            <input
+                                type="text"
+                                placeholder="Last name"
+                                required
+                            />
                         </section>
                         <section className="input-block">
                             <span>Email:</span>
-                            <input type="text" placeholder="Email address" />
+                            <input
+                                type="text"
+                                placeholder="Email address"
+                                required
+                            />
                         </section>
                         <section className="input-block radio-input-block1">
                             <h3>Would you like a new site or an upgrade?</h3>
@@ -70,6 +82,7 @@ function ContactPopUpForm({ closePopUp }) {
                                         id="service1"
                                         name="contact"
                                         value="upgrade"
+                                        required
                                     />
                                     <label for="service1">New Site</label>
                                 </section>
@@ -79,6 +92,7 @@ function ContactPopUpForm({ closePopUp }) {
                                         id="service2"
                                         name="contact"
                                         value="upgrade"
+                                        required
                                     />
                                     <label for="service2">Upgrade</label>
                                 </section>
@@ -93,11 +107,19 @@ function ContactPopUpForm({ closePopUp }) {
                             />
                         </section>
                         <section className="submit-block">
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="Web Project Inquiry"
+                            />
                             <motion.button
                                 className="btn submit-btn"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={closePopUp}
+                                action="submit"
+                                method="POST"
+                                type="submit"
                             >
                                 Submit
                             </motion.button>
