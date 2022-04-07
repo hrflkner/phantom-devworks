@@ -180,13 +180,13 @@ body {
   border-bottom: 3px solid white;
 }
 .strength:hover {
-  border-color: #f4ff53;
+  border-color: rgb(251, 247, 25);
 }
 
 /* Text Highlighters 
 -------------------------------------------*/
 .candy-gradient {
-  background: linear-gradient(60deg, #4ac3d3 35%, #ec8282 65%);
+  background: linear-gradient(60deg, rgb(74, 195, 211) 35%, rgb(236, 130, 130) 65%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -195,7 +195,7 @@ body {
 
 .highlight {
   /* Typography */
-  color: #f4ff53;
+  color: rgb(251, 247, 25);
   font-weight: 500;
 }
 
@@ -380,7 +380,7 @@ body {
   /* Design */
   border: 2px solid #00d8d8;
   border-radius: 5px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   /* Typography */
   font-family: "Fredoka", sans-serif;
   line-height: 1.5;
@@ -445,7 +445,7 @@ body {
   /* Layout */
   padding: 0.5vw 0 0.5vw 0.25vw;
   /* Typography */
-  color: #f4ff53;
+  color: rgb(251, 247, 25);
   /* Design */
   background-color: black;
   border: 2px solid #ff8e8e;
@@ -454,13 +454,13 @@ body {
   width: 100%;
 }
 .contact-popup input::-moz-placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup input:-ms-input-placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup input::placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup .radio-input-block1 {
   /* Layout */
@@ -479,7 +479,7 @@ body {
   /* Checked Option Color */
 }
 .contact-popup .radio-block input:checked ~ label {
-  color: #f4ff53;
+  color: rgb(251, 247, 25);
   font-weight: 400;
 }
 .contact-popup .text-description-block {
@@ -495,19 +495,19 @@ body {
   /* Layout */
   padding: 0.5vw 0 0.5vw 0.25vw;
   /* Typography */
-  color: #f4ff53;
+  color: rgb(251, 247, 25);
   /* Design */
   background-color: black;
   border: 2px solid #ff8e8e;
 }
 .contact-popup .text-description::-moz-placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup .text-description:-ms-input-placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup .text-description::placeholder {
-  color: #8a8a8a;
+  color: rgb(138, 138, 138);
 }
 .contact-popup .submit-block {
   /* Layout */
@@ -586,7 +586,7 @@ nav .nav-row2 .social-icon {
   padding-right: 1vw;
 }
 nav .nav-row2 .social-icon:hover {
-  color: #f4ff53;
+  color: rgb(251, 247, 25);
 }
 nav .nav-row2 .quote-btn {
   /* Layout */
@@ -761,6 +761,7 @@ header {
 }
 
 /* Darken Paragraph Background (readability) 
+   Alternate Colored Borders
 -------------------------------------------*/
 .option1 > p {
   background: black;
@@ -790,6 +791,7 @@ header {
   border-radius: 15px;
   /* Slowed Zoom on Hover Animation */
   transition: transform 0.25s;
+  /* Option 1 Link */
 }
 .option1 h4,
 .option2 h4 {
@@ -805,10 +807,18 @@ header {
   /* Typography */
   font-size: 1vw;
 }
+.option1 a,
+.option2 a {
+  text-decoration: none;
+  font-size: 1vw;
+  font-family: Fredoka, serif;
+  font-weight: 400;
+}
 
 /* Button Hover Design
 -------------------------------------------*/
-.option1 button:hover {
+.option1 button:hover,
+.option1 a:hover {
   color: #ff8e8e;
   border: 2px solid #ff8e8e;
 }
@@ -956,9 +966,9 @@ header {
   padding-left: 2rem;
   /* Typography */
   font-size: 2.6rem;
-  color: #4ac3d3;
+  color: rgb(74, 195, 211);
   /* Design */
-  border-left: 0.5rem solid #ec8282;
+  border-left: 0.5rem solid rgb(236, 130, 130);
 }
 .upgrade-infoblock dd {
   /* Layout */
@@ -969,12 +979,50 @@ header {
 }
 
 .upgrade-secondary {
+  /* Layout */
   margin: 2vw auto 1vw;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  /* Layout */
+  font-family: Fredoka, serif;
+  /* Design */
   background: transparent;
-  color: white;
 }
 .upgrade-secondary h3 {
+  /* Typography */
+  color: #ff8e8e;
   font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.upgrade-secondary .upgrade-secondary-imgblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upgrade-secondary .upgrade-secondary-imgblock p {
+  margin: 0 5rem;
+}
+.upgrade-secondary .webdesign-plan-img {
+  max-width: 40%;
+  height: auto;
+  max-height: 35rem;
+  margin: 2rem auto;
+  /* Design */
+  border-radius: 15px;
+}
+.upgrade-secondary p {
+  /* Typography */
+  color: #00d8d8;
+  font-size: 2.2rem;
+  line-height: 2;
+}
+.upgrade-secondary p:first-of-type {
+  /* Layout */
+  margin-bottom: 2rem;
 }
 
 .background-block {
@@ -1312,21 +1360,41 @@ li {
   margin: 0 auto;
   /* Timeline Card Styles 
   ------------------------*/
+  /* Quote Link */
 }
 .production-timeline * {
   /* General Typography */
-  color: white;
   font-family: Fredoka, serif;
   line-height: 2;
 }
 .production-timeline h2 {
-  font-size: 2vw;
-  margin-bottom: 2vw;
+  /* Typography */
+  color: #00d8d8;
+  font-size: 3vw;
+  padding-bottom: 1vw;
+  /* Design */
+  border-bottom: 2px solid #ff8e8e;
+}
+.production-timeline p {
+  /* Layout */
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-left: 2rem;
+  text-align: left;
+  /* Typography */
+  font-size: 1.8rem;
+  line-height: 1.5;
+  /* Split Paragraph Blocks */
+}
+.production-timeline p:first-of-type {
+  margin-bottom: 1.5rem;
 }
 .production-timeline .timeline-block-header {
   /* Layout  */
   margin: 0 auto 2rem;
   /* Typography */
+  color: #ff8e8e;
   font-size: 3rem;
   line-height: 1;
 }
@@ -1342,6 +1410,22 @@ li {
   /* Design */
   list-style: inside;
 }
+.production-timeline .sample-quote {
+  /* Layout */
+  display: block;
+  margin: 0.5rem auto 0;
+  /* Typography */
+  color: rgb(251, 247, 25) !important;
+  font-size: 1.2vw;
+}
+.production-timeline .code-img {
+  /* Layout */
+  max-width: 100%;
+  margin: 0 2rem 2rem;
+  /* Design */
+  border: 1px solid white;
+  border-radius: 20px !important;
+}
 
 /* Custom Timeline Styles
    Class Names Provided in react-timeline Package
@@ -1353,19 +1437,21 @@ li {
 .timeline .container {
   /* Layout */
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   padding: 0 2.5%;
   margin-bottom: 4vw;
   /* Design */
-  border: 2px solid white;
-  border-radius: 2rem;
+  border-bottom: 2px solid #ff8e8e;
 }
 .timeline .card {
+  /* Layout */
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
   /* Card Padding Fix (important overwrite)
   -------------------------------------------*/
-  padding: 2rem !important;
+  padding: 2rem 1rem !important;
+  background-color: rgb(1, 51, 58) !important;
+  border: 2px ridge #ff8e8e;
 }
 .timeline .date-container {
   /* Fix for Default Spacing (important overwrite)
@@ -1378,5 +1464,19 @@ li {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   /* Typography */
+  color: #ff8e8e;
   font-size: 1.6rem;
+  /* Design */
+  background-color: black;
+  border: 2px solid #00d8d8;
+}
+.timeline span.sc-iqcoie.gXtFOG.marker {
+  background-color: #ff8e8e;
+  border: solid 2px #00d8d8;
+}
+.timeline .cea-DCY {
+  background-color: transparent;
+}
+.timeline .cea-DCY::after {
+  background-color: #00d8d8;
 }/*# sourceMappingURL=globals.css.map */
