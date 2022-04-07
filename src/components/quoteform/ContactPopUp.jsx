@@ -27,7 +27,6 @@ function ContactPopUpForm({ closePopUp }) {
     function handleSubmit() {
         document.getElementById('quoteform').submit();
     }
-
     return (
         <>
             <Backdrop onClick={closePopUp}>
@@ -41,6 +40,7 @@ function ContactPopUpForm({ closePopUp }) {
                 >
                     <section className="btn-block">
                         <motion.button
+                            type="button"
                             className="btn close-btn"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -101,7 +101,7 @@ function ContactPopUpForm({ closePopUp }) {
                                         value="upgrade"
                                         required
                                     />
-                                    <label for="service1">New Site</label>
+                                    <label htmlFor="service1">New Site</label>
                                 </section>
                                 <section className="radio-block">
                                     <input
@@ -111,7 +111,7 @@ function ContactPopUpForm({ closePopUp }) {
                                         value="upgrade"
                                         required
                                     />
-                                    <label for="service2">Upgrade</label>
+                                    <label htmlFor="service2">Upgrade</label>
                                 </section>
                             </section>
                         </section>
@@ -124,17 +124,17 @@ function ContactPopUpForm({ closePopUp }) {
                                 placeholder="Description (ex: Type of Business, Purpose for site, Design Ideas, etc...)"
                             />
                         </section>
-                        <button
+                        <motion.button
                             className="btn submit-btn"
-                            // whileHover={{ scale: 1.05 }}
-                            // whileTap={{ scale: 0.95 }}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
                             onClick={() => {
                                 handleSubmit();
                                 closePopUp();
                             }}
                         >
                             Submit
-                        </button>
+                        </motion.button>
                     </form>
                 </motion.section>
             </Backdrop>
