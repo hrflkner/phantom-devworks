@@ -29,7 +29,6 @@ function NavBar() {
                             className="nav-link"
                             href="https://reactjs-portfolio-page.firebaseapp.com/"
                             target="_blank"
-                            noreferrer
                             rel="noreferrer"
                         >
                             About
