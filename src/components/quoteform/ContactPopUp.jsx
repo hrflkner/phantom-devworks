@@ -23,6 +23,11 @@ const popIn = {
 };
 
 function ContactPopUpForm({ closePopUp }) {
+    /* Handle Submit Due to Framer Motion */
+    function handleSubmit() {
+        document.getElementById('quoteform').submit();
+    }
+
     return (
         <>
             <Backdrop onClick={closePopUp}>
@@ -51,6 +56,7 @@ function ContactPopUpForm({ closePopUp }) {
                     <form
                         action="https://formsubmit.co/phantom.devworks@gmail.com"
                         method="POST"
+                        id="quoteform"
                     >
                         <section className="input-block">
                             <input
@@ -122,7 +128,10 @@ function ContactPopUpForm({ closePopUp }) {
                             className="btn submit-btn"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={closePopUp}
+                            onClick={() => {
+                                handleSubmit();
+                                closePopUp();
+                            }}
                             type="submit"
                         >
                             Submit
