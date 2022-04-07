@@ -132,7 +132,6 @@ function ContactPopUpForm({ closePopUp }) {
                                 handleSubmit();
                                 closePopUp();
                             }}
-                            type="submit"
                         >
                             Submit
                         </motion.button>
