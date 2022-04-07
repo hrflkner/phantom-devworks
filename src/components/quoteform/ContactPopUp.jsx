@@ -48,7 +48,10 @@ function ContactPopUpForm({ closePopUp }) {
                         Send a message describing your website needs, and we
                         will get back to you with a quote ASAP!
                     </p>
-                    <form>
+                    <form
+                        action="https://formsubmit.co/phantom.devworks@gmail.com"
+                        method="POST"
+                    >
                         <section className="input-block">
                             <span>First name:</span>
                             <input
@@ -121,8 +124,6 @@ function ContactPopUpForm({ closePopUp }) {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={closePopUp}
-                                action="https://formsubmit.co/phantom.devworks@gmail.com"
-                                method="POST"
                                 type="submit"
                             >
                                 Submit
