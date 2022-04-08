@@ -54,16 +54,17 @@ function ContactPopUpForm({ closePopUp }) {
                         will get back to you with a quote ASAP!
                     </p>
                     <form
-                        action="https://formsubmit.co/phantom.devworks@gmail.com"
+                        action="https://formsubmit.co/vodoviza@maildim.com"
+                        //action="https://formsubmit.co/phantom.devworks@gmail.com"
                         method="POST"
                         id="quoteform"
                     >
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="Web Project Inquiry"
+                        />
                         <section className="input-block">
-                            <input
-                                type="hidden"
-                                name="_subject"
-                                value="Web Project Inquiry"
-                            />
                             <span>First name:</span>
                             <input
                                 type="text"
@@ -86,7 +87,7 @@ function ContactPopUpForm({ closePopUp }) {
                             <input
                                 type="text"
                                 name="Email"
-                                placeholder="Email address"
+                                placeholder="Email Address"
                                 required
                             />
                         </section>
@@ -97,7 +98,7 @@ function ContactPopUpForm({ closePopUp }) {
                                     <input
                                         type="radio"
                                         id="service1"
-                                        name="Upgrade Site"
+                                        name="Site Option"
                                         value="upgrade"
                                         required
                                     />
@@ -107,7 +108,7 @@ function ContactPopUpForm({ closePopUp }) {
                                     <input
                                         type="radio"
                                         id="service2"
-                                        name="New Site"
+                                        name="Site Option"
                                         value="upgrade"
                                         required
                                     />
