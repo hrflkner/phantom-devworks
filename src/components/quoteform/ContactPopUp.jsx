@@ -54,8 +54,7 @@ function ContactPopUpForm({ closePopUp }) {
                         will get back to you with a quote ASAP!
                     </p>
                     <form
-                        action="https://formsubmit.co/vodoviza@maildim.com"
-                        //action="https://formsubmit.co/phantom.devworks@gmail.com"
+                        action="https://formsubmit.co/phantom.devworks@gmail.com"
                         method="POST"
                         id="quoteform"
                     >
