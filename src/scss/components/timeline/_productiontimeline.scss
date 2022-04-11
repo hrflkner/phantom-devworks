@@ -94,8 +94,7 @@
     /* Layout */
     width: 100%;
 
-    .container,
-    .events {
+    .container {
         /* Layout */
         width: 100%;
         padding: 0 2.5%;
@@ -110,6 +109,7 @@
     .card {
         /* Layout */
         height: fit-content !important;
+
         /* Card Padding Fix (important overwrite)
         -------------------------------------------*/
         padding: 2rem 1rem !important;

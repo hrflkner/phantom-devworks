@@ -1117,65 +1117,40 @@ header {
   font-family: Fredoka, serif;
 }
 
-.screen {
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  max-width: 990px;
-  flex: 1 1 100%;
-  padding: 45px 25px;
-}
-
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.card-list {
+.portfolio .card-list {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
-
-.card {
+.portfolio .card {
   position: relative;
   padding: 25px;
   height: 500px;
   flex: 0 0 40%;
   max-width: 40%;
 }
-
-.demolink {
+.portfolio .demolink {
   text-decoration: none;
 }
-
-.card:nth-child(4n+1),
-.card:nth-child(4n+4) {
+.portfolio .card:nth-child(4n+1),
+.portfolio .card:nth-child(4n+4) {
   flex: 0 0 60%;
   max-width: 60%;
 }
-
-.card:nth-child(odd) {
+.portfolio .card:nth-child(odd) {
   padding-left: 0;
 }
-
-.card:nth-child(even) {
+.portfolio .card:nth-child(even) {
   padding-right: 0;
 }
-
-.card-content-container {
+.portfolio .card-content-container {
   width: 100%;
   height: 100%;
   position: relative;
   display: block;
   pointer-events: none;
 }
-
-.card-content-container.open {
+.portfolio .card-content-container.open {
   top: 0;
   left: 0;
   right: 0;
@@ -1184,8 +1159,7 @@ li {
   overflow: hidden;
   padding: 40px 0;
 }
-
-.card-content {
+.portfolio .card-content {
   pointer-events: auto;
   position: relative;
   border-radius: 20px;
@@ -1195,23 +1169,20 @@ li {
   height: 100%;
   margin: 0 auto;
 }
-
-.open .card-content {
+.portfolio .open .card-content {
   height: auto;
   max-width: 700px;
   overflow: hidden;
   pointer-events: none;
 }
-
-.card-open-link {
+.portfolio .card-open-link {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-
-.card-image-container {
+.portfolio .card-image-container {
   border-radius: 20px;
   background-color: black;
   position: absolute;
@@ -1221,18 +1192,15 @@ li {
   height: 420px;
   width: 100%;
 }
-
-.card-image {
+.portfolio .card-image {
   width: 70rem;
   height: auto;
 }
-
-.open .card-image-container,
-.open .title-container {
+.portfolio .open .card-image-container,
+.portfolio .open .title-container {
   z-index: 0;
 }
-
-.title-container {
+.portfolio .title-container {
   display: flex;
   flex-direction: column;
   padding: 1vw 0;
@@ -1246,59 +1214,53 @@ li {
   top: 74%;
   max-width: 100%;
 }
-.title-container h2 {
+.portfolio .title-container h2 {
   color: #ff8e8e;
   font-size: 1.6rem;
   font-family: Fredoka, serif;
   margin: 8px 0;
 }
-.title-container span {
+.portfolio .title-container span {
   color: #00d8d8;
   font-size: 2rem;
   font-family: Fredoka, serif;
 }
-
-.open .title-container {
+.portfolio .open .title-container {
   top: 30px;
   left: 30px;
 }
-
-.category {
+.portfolio .category {
   text-transform: uppercase;
 }
-
 @media only screen and (max-width: 800px) {
-  .card {
+  .portfolio .card {
     flex: 0 0 50%;
     max-width: 50%;
   }
-
-  .card:nth-child(4n+1),
-.card:nth-child(4n+4) {
+  .portfolio .card:nth-child(4n+1),
+.portfolio .card:nth-child(4n+4) {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
 @media only screen and (max-width: 600px) {
-  .card {
+  .portfolio .card {
     flex: 1 0 100%;
     max-width: 100%;
     padding: 10px;
     padding-left: 0;
     padding-right: 0;
   }
-
-  .card:nth-child(4n+1),
-.card:nth-child(4n+4) {
+  .portfolio .card:nth-child(4n+1),
+.portfolio .card:nth-child(4n+4) {
     flex: 1 0 100%;
     max-width: 100%;
   }
-
-  .card-content-container.open {
+  .portfolio .card-content-container.open {
     padding: 0;
   }
 }
-.driveway__focus-curtain {
+.portfolio .driveway__focus-curtain {
   background-color: #000;
   transition: opacity 0.25s ease-in-out;
   opacity: 0;
@@ -1310,38 +1272,38 @@ li {
   pointer-events: none;
   z-index: 2;
 }
-.driveway-panel:hover {
+.portfolio .driveway-panel:hover {
   z-index: 501;
   transform: scale(1.1);
 }
-.driveway-panel--focus {
+.portfolio .driveway-panel--focus {
   position: relative;
 }
-.driveway-panel--focus:hover ~ .driveway__focus-curtain {
+.portfolio .driveway-panel--focus:hover ~ .driveway__focus-curtain {
   opacity: 0.8;
   z-index: 500;
 }
 @media screen and (min-width: 768px) {
-  .driveway-panel {
+  .portfolio .driveway-panel {
     page-break-inside: avoid;
     -moz-column-break-inside: avoid;
          break-inside: avoid;
   }
 }
 @media screen and (min-width: 768px) {
-  .driveway {
+  .portfolio .driveway {
     -moz-column-count: 2;
          column-count: 2;
   }
 }
 @media screen and (min-width: 992px) {
-  .driveway {
+  .portfolio .driveway {
     -moz-column-count: 3;
          column-count: 3;
   }
 }
 @media screen and (min-width: 1500px) {
-  .driveway {
+  .portfolio .driveway {
     -moz-column-count: 4;
          column-count: 4;
   }
@@ -1429,8 +1391,7 @@ li {
   /* Layout */
   width: 100%;
 }
-.timeline .container,
-.timeline .events {
+.timeline .container {
   /* Layout */
   width: 100%;
   padding: 0 2.5%;
