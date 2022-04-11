@@ -1429,7 +1429,8 @@ li {
   /* Layout */
   width: 100%;
 }
-.timeline .container {
+.timeline .container,
+.timeline .events {
   /* Layout */
   width: 100%;
   padding: 0 2.5%;
@@ -1469,9 +1470,9 @@ li {
   background-color: #ff8e8e;
   border: solid 2px #00d8d8;
 }
-.timeline .cea-DCY {
+.timeline .container {
   background-color: transparent;
 }
-.timeline .cea-DCY::after {
+.timeline .container::after {
   background-color: #00d8d8;
 }/*# sourceMappingURL=globals.css.map */

@@ -94,7 +94,8 @@
     /* Layout */
     width: 100%;
 
-    .container {
+    .container,
+    .events {
         /* Layout */
         width: 100%;
         padding: 0 2.5%;
@@ -140,10 +141,10 @@
         background-color: v.$candyRed;
         border: solid 2px v.$candyBlue;
     }
-    .cea-DCY {
+    .container {
         background-color: transparent; // rgb(0, 54, 49);
     }
-    .cea-DCY::after {
+    .container::after {
         background-color: v.$candyBlue;
     }
 }
