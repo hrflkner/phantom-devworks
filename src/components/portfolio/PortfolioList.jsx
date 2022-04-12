@@ -54,7 +54,7 @@ function PortfolioList({ selectedId }) {
                         isSelected={card.id === selectedId}
                     />
                 ))}
-                <div class="driveway__focus-curtain"></div>
+                <div className="driveway__focus-curtain"></div>
             </ul>
         </>
     );
