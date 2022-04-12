@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { items } from './portfoliodata';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Card({ id, title, category, demolink }) {
     return (
@@ -19,7 +20,7 @@ function Card({ id, title, category, demolink }) {
                             className="card-image-container"
                             layoutId={`card-image-container-${id}`}
                         >
-                            <img
+                            <LazyLoadImage
                                 className="card-image"
                                 src={`images/${id}.webp`}
                                 alt=""
@@ -54,7 +55,10 @@ function PortfolioList({ selectedId }) {
                         isSelected={card.id === selectedId}
                     />
                 ))}
-                <div className="driveway__focus-curtain"></div>
+                <div
+                    className="driveway__focus-curtain"
+                    aria-hidden="true"
+                ></div>
             </ul>
         </>
     );

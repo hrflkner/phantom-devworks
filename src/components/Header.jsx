@@ -14,6 +14,8 @@ function Header() {
                     <h1 className="logo">phantom devWorks</h1> */}
                     <img
                         className="logo-ghost"
+                        height="130"
+                        width="318"
                         src={LogoGhost}
                         alt="Logo Ghost"
                     />
