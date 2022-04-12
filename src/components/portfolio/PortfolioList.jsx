@@ -21,7 +21,7 @@ function Card({ id, title, category, demolink }) {
                         >
                             <img
                                 className="card-image"
-                                src={`images/${id}.jpg`}
+                                src={`images/${id}.webp`}
                                 alt=""
                             />
                         </motion.div>

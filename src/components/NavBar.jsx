@@ -56,8 +56,9 @@ function NavBar() {
                                 href="https://www.linkedin.com/in/hunter-faulkner-a67b70144/"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="Linkedin Link"
                             >
-                                <IoLogoLinkedin />
+                                <IoLogoLinkedin alt="" />
                             </a>
                         </motion.li>
                         <motion.li
@@ -69,8 +70,9 @@ function NavBar() {
                                 href="https://twitter.com/hrflkner"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="Twitter Link"
                             >
-                                <IoLogoTwitter />
+                                <IoLogoTwitter alt="" />
                             </a>
                         </motion.li>
                         <motion.li
@@ -82,16 +84,23 @@ function NavBar() {
                                 href="https://github.com/hrflkner"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="Github Link"
                             >
-                                <IoLogoGithub />
+                                <IoLogoGithub alt="" />
                             </a>
                         </motion.li>
                         <motion.li
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <a className="social-icon" href="/" target="_blank">
-                                <IoMail />
+                            <a
+                                className="social-icon"
+                                href="/"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="Email Link"
+                            >
+                                <IoMail alt="" />
                             </a>
                         </motion.li>
                     </ul>
