@@ -53,15 +53,6 @@ export const items = [
         backgroundColor: '#282F49',
         demolink: 'https://hrflkner.github.io/khanacademy-clone/',
     },
-    // _____ Clone
-    {
-        id: 'l',
-        category: 'Cats',
-        title: 'Yes, They Are Sociopaths',
-        pointOfInterest: 200,
-        backgroundColor: '#AC7441',
-        demolink: '/',
-    },
     // Level Ground Layout Clone
     {
         id: 'level-ground-clone',
@@ -70,6 +61,15 @@ export const items = [
         pointOfInterest: 260,
         backgroundColor: '#CC555B',
         demolink: 'https://hrflkner.github.io/levelground-clone/',
+    },
+    // _____ Clone
+    {
+        id: 'l',
+        category: 'Cats',
+        title: 'Yes, They Are Sociopaths',
+        pointOfInterest: 200,
+        backgroundColor: '#AC7441',
+        demolink: '/',
     },
 ];
 
