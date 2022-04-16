@@ -64,12 +64,13 @@ export const items = [
     },
     // _____ Clone
     {
-        id: 'l',
-        category: 'Cats',
-        title: 'Yes, They Are Sociopaths',
+        id: 'stylesconference-clone',
+        category: 'Styles Conference',
+        title: 'Layout Clone - Shay Howe',
         pointOfInterest: 200,
         backgroundColor: '#AC7441',
-        demolink: '/',
+        demolink:
+            'https://hrflkner.github.io/styles-conference-practice-shayhowe/',
     },
 ];
 
