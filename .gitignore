@@ -12,7 +12,7 @@
 /build
 
 # unoptimized jpgs
-public\images\unoptimized-images
+public/images/unoptimized-images
 
 # misc
 .DS_Store
