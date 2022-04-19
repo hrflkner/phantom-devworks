@@ -1,3 +1,5 @@
+import DesignerGraphic from '../images/ar-designer.svg';
+
 function NewSiteOption() {
     return (
         <>
@@ -15,7 +17,12 @@ function NewSiteOption() {
                         . Seize the advantage of projecting your business online
                         and establish greater reach in your community!
                     </p>
-                    <div className="img-fill fadeInLeft"></div>
+                    <div className="designer-graphic fadeInLeft">
+                        <img
+                            src={DesignerGraphic}
+                            alt="Designing a Site Graphic"
+                        />
+                    </div>
                 </section>
                 <section className="blurb">
                     <p className="fadeInLeft">
