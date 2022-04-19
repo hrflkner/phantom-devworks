@@ -29,7 +29,7 @@ function UpgradeSiteOption() {
                         <img
                             src={ResponsiveIcon}
                             alt="Responsiveness Icon"
-                            className="deflist-icons fadeIn"
+                            className="deflist-icons fadeInLeft"
                         ></img>
                         <dt className="fadeInRight">Accessibility</dt>
                         <dd className="fadeInLeft">
@@ -43,7 +43,7 @@ function UpgradeSiteOption() {
                         <img
                             src={AccessibleIcon}
                             alt="Accessible Icon"
-                            className="deflist-icons fadeIn"
+                            className="deflist-icons fadeInLeft"
                         ></img>
                         <dt className="fadeInRight">Searchability</dt>
                         <dd className="fadeInLeft">
@@ -62,7 +62,7 @@ function UpgradeSiteOption() {
                         <img
                             src={SearchableIcon}
                             alt="Searchable Icon"
-                            className="deflist-icons fadeIn"
+                            className="deflist-icons fadeInLeft"
                         ></img>
                     </dl>
                 </section>
