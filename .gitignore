@@ -11,6 +11,9 @@
 # production
 /build
 
+# unoptimized jpgs
+public\images\unoptimized-images
+
 # misc
 .DS_Store
 .env.local
