@@ -639,71 +639,6 @@ header {
   font-family: "Fredoka", sans-serif;
 }
 
-.openingcall {
-  /* Layout */
-  width: 65vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.openingcall h2 {
-  /* Layout */
-  margin-bottom: 4rem;
-  /* Typography */
-  color: white;
-  font-family: "Fredoka", sans-serif;
-  font-size: 4vw;
-  line-height: 1;
-}
-
-.blurb {
-  /* Layout */
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  /* Typography */
-  color: white;
-  font-size: 1.4vw;
-  font-family: "Fredoka", sans-serif;
-  line-height: 1.6;
-  /* Design */
-  background-color: black;
-}
-.blurb:first-of-type {
-  margin-bottom: 2vw;
-}
-.blurb p {
-  /* Typography */
-  font-weight: 100;
-  line-height: 2;
-}
-.blurb p::first-letter {
-  /* Large First Letter */
-  font-size: 4rem;
-  /* Fix Spacing from Larger Font */
-  line-height: 0;
-  letter-spacing: -0.75rem;
-  margin-left: -0.8rem;
-}
-.blurb .img-fill {
-  /* Layout */
-  height: 300px;
-  /* Temp */
-  background-color: rgba(128, 128, 128, 0.308);
-  border: 1px solid red;
-}
-
-.blurb-grid {
-  /* Layout */
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
-  /* Typography */
-  line-height: 2;
-}
-
 .subheader {
   /* Layout */
   width: 68vw;
@@ -892,6 +827,74 @@ header {
   color: #ff8e8e;
   /* Design */
   border-color: #00d8d8;
+}
+
+.openingcall {
+  /* Layout */
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.openingcall h2 {
+  /* Layout */
+  margin-bottom: 1rem;
+  /* Typography */
+  color: white;
+  font-family: "Fredoka", sans-serif;
+  font-size: 4vw;
+  line-height: 1;
+}
+
+.blurb {
+  /* Layout */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /* Typography */
+  color: white;
+  font-size: 1.4vw;
+  font-family: "Fredoka", sans-serif;
+  line-height: 1.6;
+  /* Design */
+  background-color: black;
+}
+.blurb:first-of-type {
+  margin-bottom: 1rem;
+}
+.blurb p {
+  /* Typography */
+  font-weight: 100;
+  line-height: 2;
+}
+.blurb p::first-letter {
+  /* Large First Letter */
+  font-size: 4rem;
+  /* Fix Spacing from Larger Font */
+  line-height: 0;
+  letter-spacing: -0.75rem;
+  margin-left: -0.8rem;
+}
+
+.blurb-grid {
+  /* Layout */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+  /* Typography */
+  line-height: 2;
+}
+
+.designer-graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.designer-graphic img {
+  aspect-ratio: 17 12;
+  width: 100%;
 }
 
 .upgrade-openingcall {
