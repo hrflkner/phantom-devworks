@@ -34,10 +34,6 @@
     /* Design */
     background-color: black;
 
-    &:first-of-type {
-        margin-bottom: 1rem;
-    }
-
     p {
         /* Typography */
         font-weight: 100;
@@ -57,8 +53,8 @@
 
 .blurb-grid {
     /* Layout */
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8rem;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 2rem;
 
     /* Typography */
     line-height: 2;

@@ -862,9 +862,6 @@ header {
   /* Design */
   background-color: black;
 }
-.blurb:first-of-type {
-  margin-bottom: 1rem;
-}
 .blurb p {
   /* Typography */
   font-weight: 100;
@@ -881,8 +878,8 @@ header {
 
 .blurb-grid {
   /* Layout */
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 2rem;
   /* Typography */
   line-height: 2;
 }
