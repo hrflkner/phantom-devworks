@@ -12,8 +12,8 @@
 // import { useInView } from 'react-intersection-observer';
 
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import mainBackgroundOne from '../images/phantom-design-works-main2.png';
-import mainBackgroundTwo from '../images/phantom-dev-works-background2.png';
+import mainBackgroundOne from '../images/phantom-design-works-main.webp';
+import mainBackgroundTwo from '../images/phantom-dev-works-secondary.webp';
 
 function Background({ children }) {
     const { scrollYProgress } = useViewportScroll();
