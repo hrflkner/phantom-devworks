@@ -1385,6 +1385,7 @@ header {
   margin-bottom: 4vw;
   /* Design */
   border-bottom: 2px solid #ff8e8e;
+  /* Layout */
 }
 .timeline .container .events {
   padding: 5rem 0;
