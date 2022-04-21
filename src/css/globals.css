@@ -1386,6 +1386,9 @@ header {
   /* Design */
   border-bottom: 2px solid #ff8e8e;
 }
+.timeline .container .events {
+  padding: 5rem 0;
+}
 .timeline .card {
   /* Layout */
   height: -webkit-fit-content !important;
