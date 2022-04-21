@@ -1,16 +1,3 @@
-// import {
-//     ScrollContainer,
-//     ScrollPage,
-//     Animator,
-//     FadeIn,
-//     MoveIn,
-//     batch,
-// } from 'react-scroll-motion';
-// import { useRef } from 'react';
-//import ghost3 from '../images/body-ghost-1.png';
-
-// import { useInView } from 'react-intersection-observer';
-
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import mainBackgroundOne from '../images/phantom-design-works-main.webp';
 import mainBackgroundTwo from '../images/phantom-dev-works-secondary.webp';
@@ -20,18 +7,6 @@ function Background({ children }) {
     const opacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
     const offsetX = useTransform(scrollYProgress, [0.2, 0.4], [100, 0]);
     const offsetY = useTransform(scrollYProgress, [0.2, 0.4], [300, 0]);
-
-    // const { ref, inView, entry } = useInView();
-    // const variants = {
-    //     hidden: {
-    //         x: 100,
-    //         y: 500,
-    //     },
-    //     visible: {
-    //         x: 0,
-    //         y: 0,
-    //     },
-    // };
 
     return (
         <>
@@ -56,25 +31,6 @@ function Background({ children }) {
                 alt="Main Background 2"
             />
         </>
-
-        // <ScrollContainer>
-        //     <ScrollPage page={1}>
-        //         <Animator animation={batch(FadeIn(), MoveIn(50, 500))}>
-        //             <section className="background-block">
-        //                 <img
-        //                     className="main-background-1"
-        //                     src={mainBackgroundOne}
-        //                     alt="Main Background 1"
-        //                 />
-        //                 <img
-        //                     className="main-background-2"
-        //                     src={mainBackgroundTwo}
-        //                     alt="Main Background 2"
-        //                 />
-        //             </section>
-        //         </Animator>
-        //     </ScrollPage>
-        // </ScrollContainer>
     );
 }
 
