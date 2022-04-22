@@ -180,7 +180,7 @@ body {
   border-bottom: 3px solid white;
 }
 .strength:hover {
-  border-color: rgb(251, 247, 25);
+  border-color: #fdff81;
 }
 
 /* Text Highlighters 
@@ -195,7 +195,7 @@ body {
 
 .highlight {
   /* Typography */
-  color: rgb(251, 247, 25);
+  color: #fdff81;
   font-weight: 500;
 }
 
@@ -445,7 +445,7 @@ body {
   /* Layout */
   padding: 0.5vw 0 0.5vw 0.25vw;
   /* Typography */
-  color: rgb(251, 247, 25);
+  color: #fdff81;
   /* Design */
   background-color: black;
   border: 2px solid #ff8e8e;
@@ -479,7 +479,7 @@ body {
   /* Checked Option Color */
 }
 .contact-popup .radio-block input:checked ~ label {
-  color: rgb(251, 247, 25);
+  color: #fdff81;
   font-weight: 400;
 }
 .contact-popup .text-description-block {
@@ -495,7 +495,7 @@ body {
   /* Layout */
   padding: 0.5vw 0 0.5vw 0.25vw;
   /* Typography */
-  color: rgb(251, 247, 25);
+  color: #fdff81;
   /* Design */
   background-color: black;
   border: 2px solid #ff8e8e;
@@ -581,7 +581,7 @@ nav .nav-row2 .social-icon {
   padding-right: 1vw;
 }
 nav .nav-row2 .social-icon:hover {
-  color: rgb(251, 247, 25);
+  color: #fdff81;
 }
 nav .nav-row2 .quote-btn {
   /* Layout */
@@ -909,6 +909,19 @@ header {
   color: #ff8e8e;
   font-size: 4rem;
   font-style: italic;
+}
+.upgrade-infoblock .trial-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.upgrade-infoblock .trial-section-image {
+  margin: 4rem 0;
+  height: 40rem;
+}
+.upgrade-infoblock .trial-section-image:nth-of-type(2) {
+  margin-left: -8rem;
+  margin-top: 8rem;
 }
 .upgrade-infoblock dl {
   /* Layout */
@@ -1340,7 +1353,7 @@ header {
   display: block;
   margin: 0.5rem auto 0;
   /* Typography */
-  color: rgb(251, 247, 25) !important;
+  color: #fdff81 !important;
   font-size: 1.2vw;
 }
 .production-timeline .code-img {

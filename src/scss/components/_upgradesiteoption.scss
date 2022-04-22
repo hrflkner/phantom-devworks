@@ -40,6 +40,21 @@
         font-style: italic;
     }
 
+    .trial-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .trial-section-image {
+        margin: 4rem 0; //4rem auto 8rem;
+        height: 40rem;
+
+        &:nth-of-type(2) {
+            margin-left: -8rem;
+            margin-top: 8rem;
+        }
+    }
+
     dl {
         /* Layout */
         display: grid;
