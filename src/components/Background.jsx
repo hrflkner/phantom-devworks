@@ -1,5 +1,5 @@
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import mainBackgroundOne from '../images/phantom-design-works-main.webp';
+import mainBackgroundOne from '../images/phantom-dev-works-main.webp';
 import mainBackgroundTwo from '../images/phantom-dev-works-secondary.webp';
 
 function Background({ children }) {
