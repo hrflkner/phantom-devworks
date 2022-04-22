@@ -1,5 +1,5 @@
 import NavBar from './NavBar';
-import LogoGhost from '../images/phantom-logo-clear.png';
+import LogoGhost from '../images/phantom-logo.webp';
 
 function Header() {
     return (
