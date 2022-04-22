@@ -1,6 +1,9 @@
 import Background from './Background';
 
-import ResponsiveIcon from '../images/responsive-icon.svg.svg';
+import ShoppingSVG from '../images/person-studying-online4.png';
+import Ghost4PNG from '../images/PointingGhost.png';
+
+import ResponsiveIcon from '../images/responsive-icon.svg';
 import AccessibleIcon from '../images/accessible-icon.svg';
 import SearchableIcon from '../images/searchable-icon.svg';
 import DesignSketch from '../images/design-sketch.webp';
@@ -11,9 +14,22 @@ function UpgradeSiteOption() {
             <section className="upgrade-openingcall">
                 <h2 className="fadeInRight">
                     <span className=" candy-animation">Upgrade</span> your site
-                    with modern design practices
+                    with{' '}
+                    <span className="highlight">modern design practices</span>
                 </h2>
                 <section className="upgrade-infoblock fadeIn">
+                    <section className="trial-section">
+                        <img
+                            className="trial-section-image"
+                            src={ShoppingSVG}
+                            alt=""
+                        />
+                        <img
+                            className="trial-section-image"
+                            src={Ghost4PNG}
+                            alt=""
+                        />
+                    </section>
                     <h4>Today's must-haves:</h4>
                     <dl>
                         <dt className="fadeInRight">Responsiveness</dt>
@@ -46,7 +62,7 @@ function UpgradeSiteOption() {
                             alt="Accessible Icon"
                             className="deflist-icons fadeInLeft"
                         ></img>
-                        <dt className="fadeInRight">Searchability</dt>
+                        <dt className="fadeInRight">Discoverability</dt>
                         <dd className="fadeInLeft">
                             Engineering your site to be{' '}
                             <span className="highlight">
