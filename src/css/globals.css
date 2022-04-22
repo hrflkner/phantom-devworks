@@ -771,14 +771,14 @@ header {
 -------------------------------------------*/
 .option1 {
   /* Design */
-  background-image: linear-gradient(rgba(0, 216, 216, 0.85) 1%, rgba(1, 57, 59, 0.45) 35%), url(../images/responsive-design.png);
+  background-image: linear-gradient(rgba(0, 216, 216, 0.85) 1%, rgba(1, 57, 59, 0.45) 35%), url(../images/new-site-option.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .option2 {
   /* Design */
-  background-image: linear-gradient(rgba(255, 142, 142, 0.95) 1%, rgba(87, 35, 35, 0.25) 35%), url(../images/upgrade-site2.png);
+  background-image: linear-gradient(rgba(255, 142, 142, 0.95) 1%, rgba(87, 35, 35, 0.25) 35%), url(../images/upgrade-site-option.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(255, 142, 142, 0.95);
