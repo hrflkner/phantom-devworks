@@ -1,6 +1,6 @@
 import React from 'react';
 import { Timeline, Events, TextEvent, themes } from '@merc/react-timeline';
-import CodeImage from '../../images/code-background2.jpg';
+import CodingScreen from '../../images/timeline-devscreen.webp';
 
 export default function TimeLine() {
     return (
@@ -73,7 +73,7 @@ export default function TimeLine() {
                     </h3>
                     <img
                         className="code-img"
-                        src={CodeImage}
+                        src={CodingScreen}
                         alt="Coding Screen"
                     />
                     <p>
