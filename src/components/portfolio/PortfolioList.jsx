@@ -10,6 +10,7 @@ function Card({ id, title, category, demolink }) {
                 className="demolink"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="portfolio-entry"
             >
                 <div className="card-content-container">
                     <motion.div
@@ -23,7 +24,7 @@ function Card({ id, title, category, demolink }) {
                             <LazyLoadImage
                                 className="card-image"
                                 src={`images/${id}.webp`}
-                                alt=""
+                                alt={`${id}`}
                             />
                         </motion.div>
                         <motion.div
