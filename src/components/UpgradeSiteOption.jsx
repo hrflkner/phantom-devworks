@@ -1,8 +1,9 @@
+import Background from './Background';
+
 import ResponsiveIcon from '../images/responsive-icon.svg.svg';
 import AccessibleIcon from '../images/accessible-icon.svg';
 import SearchableIcon from '../images/searchable-icon.svg';
-import Background from './Background';
-import WebDesignPlan from '../images/website-designplan.jpg';
+import DesignSketch from '../images/design-sketch.webp';
 
 function UpgradeSiteOption() {
     return (
@@ -77,7 +78,7 @@ function UpgradeSiteOption() {
                     <section className="upgrade-secondary-imgblock">
                         <img
                             className="webdesign-plan-img"
-                            src={WebDesignPlan}
+                            src={DesignSketch}
                             alt="Website Design Plan"
                         />
                         <p>
