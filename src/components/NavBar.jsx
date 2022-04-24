@@ -1,12 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-    IoMail,
-    IoLogoTwitter,
-    IoLogoLinkedin,
-    IoLogoGithub,
-} from 'react-icons/io5';
+import SocialLinksBar from './SocialLinksBar';
 import ContactPopUpForm from './quoteform/ContactPopUp';
 
 function NavBar() {
@@ -22,7 +17,6 @@ function NavBar() {
                         <Link className="nav-link" to="/">
                             Home
                         </Link>{' '}
-                        {/*<a href="/">Home</a>*/}
                     </li>
                     <li>
                         <a
@@ -46,64 +40,7 @@ function NavBar() {
                     </li>
                 </ul>
                 <section className="nav-row2">
-                    <ul>
-                        <motion.li
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <a
-                                className="social-icon"
-                                href="https://www.linkedin.com/in/hunter-faulkner-a67b70144/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Linkedin Link"
-                            >
-                                <IoLogoLinkedin alt="" />
-                            </a>
-                        </motion.li>
-                        <motion.li
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <a
-                                className="social-icon"
-                                href="https://twitter.com/hrflkner"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Twitter Link"
-                            >
-                                <IoLogoTwitter alt="" />
-                            </a>
-                        </motion.li>
-                        <motion.li
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <a
-                                className="social-icon"
-                                href="https://github.com/hrflkner"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Github Link"
-                            >
-                                <IoLogoGithub alt="" />
-                            </a>
-                        </motion.li>
-                        <motion.li
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <a
-                                className="social-icon"
-                                href="/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="Email Link"
-                            >
-                                <IoMail alt="" />
-                            </a>
-                        </motion.li>
-                    </ul>
+                    <SocialLinksBar />
                     {contactOpen ? <ContactPopUpForm /> : ''}
                     <motion.button
                         className="btn quote-btn"
