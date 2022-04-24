@@ -72,7 +72,9 @@ function Footer() {
                     <span className="lightgrey blockspan">
                         Sydney, NSW, Australia
                     </span>
-                    <span className="blockspan">emailaddress@emailme.com</span>
+                    <span className="blockspan">
+                        phantom.devworks@gmail.com
+                    </span>
                 </section>
             </section>
             <section className="lower-footer">
