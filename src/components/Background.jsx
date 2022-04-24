@@ -1,12 +1,12 @@
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import mainBackgroundOne from '../images/phantom-dev-works-main.webp';
+import mainBackgroundOne from '../images/phantom-dev-works-main3.png';
 import mainBackgroundTwo from '../images/phantom-dev-works-secondary.webp';
 
 function Background({ children }) {
     const { scrollYProgress } = useViewportScroll();
     const opacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
-    const offsetX = useTransform(scrollYProgress, [0.2, 0.4], [100, 0]);
-    const offsetY = useTransform(scrollYProgress, [0.2, 0.4], [300, 0]);
+    const offsetX = useTransform(scrollYProgress, [0.4, 0.5], [100, 0]);
+    const offsetY = useTransform(scrollYProgress, [0.4, 0.5], [300, 0]);
 
     return (
         <>
