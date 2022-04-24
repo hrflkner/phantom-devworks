@@ -57,7 +57,7 @@ function SocialLinksBar() {
             <motion.li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <a
                     className="social-icon"
-                    href="/"
+                    href="mailto:phantom.devworks@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Email Link"
