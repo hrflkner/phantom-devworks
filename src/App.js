@@ -5,9 +5,7 @@ import HomePage from './pages/HomePage';
 import { About } from './pages/About';
 import { Timeline } from './pages/Timeline';
 import { Portfolio } from './pages/Portfolio';
-//import SubHeader from './components/SubHeader';
-//import Headline from './components/Headline';
-// import Background from './components/Background';
+import Footer from './components/Footer';
 
 import './css/globals.css';
 
@@ -22,9 +20,7 @@ function App() {
                     <Route path="/timeline" element={<Timeline />} exact />
                     <Route path="/portfolio" element={<Portfolio />} exact />
                 </Routes>
-                {/* <SubHeader /> */}
-                {/* <Headline /> */}
-                {/* <Background /> */}
+                <Footer />
             </div>
         </Router>
     );
