@@ -79,8 +79,9 @@ function Footer() {
             </section>
             <section className="lower-footer">
                 <span>
-                    This site was built by with React, Figma, Framer, and Styled
-                    Components. It is owned by name name.
+                    This site was buit with React, Node, Figma, Framer, and
+                    Styled Components / SCSS. It is owned by Hunter Faulkner and
+                    Jiayi Liao.
                 </span>
             </section>
         </footer>
