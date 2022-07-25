@@ -54,7 +54,7 @@ function ContactPopUpForm({ closePopUp }) {
                         will get back to you with a quote ASAP!
                     </p>
                     <form
-                        action="https://formsubmit.co/hunter.faulkner@phantomdevworks.com"
+                        action="https://formsubmit.co/be9a1abfedc8b03e74ec18186e20d031"
                         method="POST"
                         id="quoteform"
                     >
@@ -98,7 +98,7 @@ function ContactPopUpForm({ closePopUp }) {
                                         type="radio"
                                         id="service1"
                                         name="Site Option"
-                                        value="upgrade"
+                                        value="new site"
                                         required
                                     />
                                     <label htmlFor="service1">New Site</label>
