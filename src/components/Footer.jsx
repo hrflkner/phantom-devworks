@@ -73,7 +73,7 @@ function Footer() {
                         Sydney, NSW, Australia
                     </span>
                     <span className="blockspan">
-                        phantom.devworks@gmail.com
+                        hunter.faulkner@phantomdevworks.com
                     </span>
                 </section>
             </section>
