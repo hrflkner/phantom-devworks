@@ -1,0 +1,17 @@
+header {
+    /* Layout */
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 4vw;
+}
+.logo-block {
+    display: flex;
+}
+.logo-ghost {
+    height: 13rem;
+    width: auto;
+    max-width: 32rem;
+    margin: -1rem 1rem 0 -4rem;
+}
