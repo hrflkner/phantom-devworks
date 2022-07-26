@@ -1,4 +1,4 @@
-import Background from './Background';
+import Background from './shared/background/Background';
 
 import ShoppingSVG from '../images/person-studying-online4.png';
 import Ghost4PNG from '../images/PointingGhost.png';
