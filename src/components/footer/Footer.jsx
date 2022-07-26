@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import SocialLinksBar from '../SocialLinksBar';
+import SocialLinksBar from '../shared/SocialLinksBar';
 
 function Footer() {
     return (
