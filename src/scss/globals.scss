@@ -6,8 +6,10 @@
 @use '../components/header/header';
 @use '../components/header/navbar';
 
-@use './components/quoteform/backdrop';
-@use './components/quoteform/contactpopup';
+// Quote Form Component
+@use '../components/quoteform/backdrop';
+@use '../components/quoteform/contactpopup';
+
 @use './components/subheader';
 @use './components/newsiteoption';
 @use './components/upgradesiteoption';
