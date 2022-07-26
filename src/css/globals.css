@@ -331,6 +331,108 @@ body {
           animation: candyAnimation 5s ease-in infinite;
 }
 
+nav {
+  /* Layout */
+  max-width: 428px !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.nav-row1 {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nav-row1 a {
+  /* Layout */
+  width: 100%;
+  display: block;
+  justify-content: right;
+  padding: 1rem 0 0.5rem;
+  /* Typography */
+  color: white;
+  font-size: 2.2rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  /* Fix Bouncing Links on Hover */
+  border-bottom: 2px solid white;
+}
+.nav-row1 a:nth-of-type(1) {
+  padding-right: 2rem;
+}
+.nav-row1 a:hover {
+  /* Design */
+  color: #ff8e8e;
+  border-bottom: 2px solid #00d8d8;
+}
+
+.nav-row2 {
+  /* Layout */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 0;
+}
+.nav-row2 ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-row2 .social-icon {
+  /* Layout */
+  max-width: 50px;
+  /* Typography */
+  color: white;
+  font-size: 3.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 1.4rem;
+}
+.nav-row2 .social-icon:hover {
+  color: #fdff81;
+}
+.nav-row2 .quote-btn {
+  /* Layout */
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0;
+  /* Typography */
+  color: white;
+  font-size: 1.6rem;
+}
+.nav-row2 .quote-btn:hover {
+  /* Typography */
+  color: #ff8e8e;
+  /* Design */
+  border-color: #00d8d8;
+}
+
+header {
+  /* Layout */
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 4vw;
+}
+
+.logo-block {
+  display: flex;
+}
+
+.logo-ghost {
+  height: 13rem;
+  width: auto;
+  max-width: 32rem;
+  margin: -1rem 1rem 0 -4rem;
+}
+
 .backdrop {
   /* Layout */
   position: fixed;
@@ -521,105 +623,6 @@ body {
   color: #ff8e8e;
   /* Design */
   border-color: #00d8d8;
-}
-
-nav {
-  /* Layout */
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: flex-end;
-}
-
-.nav-row1 {
-  /* Layout */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.nav-row1 a {
-  /* Layout */
-  width: 100%;
-  display: block;
-  justify-content: right;
-  padding: 1rem 0 0.5rem;
-  /* Typography */
-  color: white;
-  font-size: 2.2rem;
-  font-family: "Fredoka", sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  /* Fix Bouncing Links on Hover */
-  border-bottom: 2px solid white;
-}
-.nav-row1 a:nth-of-type(1) {
-  padding-right: 2rem;
-}
-.nav-row1 a:hover {
-  /* Design */
-  color: #ff8e8e;
-  border-bottom: 2px solid #00d8d8;
-}
-
-.nav-row2 {
-  /* Layout */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0 0;
-}
-.nav-row2 ul {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-row2 .social-icon {
-  /* Typography */
-  color: white;
-  font-size: 3.6rem;
-  font-weight: 500;
-  text-decoration: none;
-  padding-right: 1vw;
-}
-.nav-row2 .social-icon:hover {
-  color: #fdff81;
-}
-.nav-row2 .quote-btn {
-  /* Layout */
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin: 0;
-  /* Typography */
-  color: white;
-  font-size: 1.6rem;
-}
-.nav-row2 .quote-btn:hover {
-  /* Typography */
-  color: #ff8e8e;
-  /* Design */
-  border-color: #00d8d8;
-}
-
-header {
-  /* Layout */
-  position: relative;
-  z-index: 9999;
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem 4vw;
-}
-
-.logo-block {
-  display: flex;
-}
-
-.logo-ghost {
-  height: 13rem;
-  width: auto;
-  max-width: 32rem;
-  margin: 0 1rem 0 -4rem;
 }
 
 .subheader {

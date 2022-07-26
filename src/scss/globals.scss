@@ -2,15 +2,18 @@
 @forward './util/variables';
 @forward './util/animations';
 
+// Header and NavBar
+@use '../components/header/navbar';
+@use '../components/header/header';
+
 @use './components/quoteform/backdrop';
 @use './components/quoteform/contactpopup';
-@use './components/navbar';
-@use './components/header';
 @use './components/subheader';
 @use './components/newsiteoption';
 @use './components/upgradesiteoption';
 @use './components/background';
 
+// Portfolio Page
 @use '../components/portfolio/portfolio';
 @use '../components/portfolio/card';
 
