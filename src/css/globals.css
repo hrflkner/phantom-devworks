@@ -1359,7 +1359,7 @@ nav {
 
 .production-timeline {
   /* Layout */
-  width: 60%;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -1375,15 +1375,15 @@ nav {
 .production-timeline h2 {
   /* Typography */
   color: #00d8d8;
-  font-size: 3vw;
-  padding-bottom: 1vw;
+  font-size: 4rem;
+  padding-bottom: 1rem;
   /* Design */
   border-bottom: 2px solid #ff8e8e;
 }
 .production-timeline p {
   /* Layout */
   display: block;
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
   padding-left: 2rem;
   text-align: left;
@@ -1418,10 +1418,10 @@ nav {
 .production-timeline .sample-quote {
   /* Layout */
   display: block;
-  margin: 0.5rem auto 0;
+  margin: 2rem auto 0;
   /* Typography */
   color: #fdff81 !important;
-  font-size: 1.2vw;
+  font-size: 1.6rem;
 }
 .production-timeline .code-img {
   /* Layout */
@@ -1433,7 +1433,7 @@ nav {
 }
 
 /* Custom Timeline Styles
-   Class Names Provided in react-timeline Package
+    Class Names Provided in react-timeline Package
 -----------------------------------------------------*/
 .timeline {
   /* Layout */
@@ -1442,8 +1442,8 @@ nav {
 .timeline .container {
   /* Layout */
   width: 100%;
-  padding: 0 2.5%;
-  margin-bottom: 4vw;
+  padding: 0;
+  margin-bottom: 6rem;
   /* Design */
   border-bottom: 2px solid #ff8e8e;
   /* Layout */
@@ -1458,7 +1458,7 @@ nav {
   height: fit-content !important;
   /* Card Padding Fix (important overwrite)
   -------------------------------------------*/
-  padding: 2rem 1rem !important;
+  padding: 4rem 2rem !important;
   background-color: rgb(1, 51, 58) !important;
   border: 2px ridge #ff8e8e;
 }
@@ -1490,6 +1490,115 @@ nav {
   background-color: #00d8d8;
 }
 
+@media all and (max-width: 1100px) {
+  .production-timeline {
+    width: 800px;
+  }
+  .production-timeline .timeline-block-header {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .production-timeline p {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 850px) {
+  .production-timeline {
+    width: 700px;
+  }
+  .production-timeline div.card {
+    max-width: 90%;
+    margin-left: 2rem;
+  }
+  .production-timeline .timeline-block-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .production-timeline h5.timeline-block-subheader {
+    font-size: 1.8rem;
+  }
+  .production-timeline li,
+.production-timeline p {
+    font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 770px) {
+  .production-timeline div.card {
+    max-width: 80%;
+    margin-left: 2rem;
+  }
+  .production-timeline p {
+    margin-left: 0;
+  }
+  span.marker {
+    margin-right: -20px;
+  }
+}
+@media all and (max-width: 650px) {
+  .date {
+    font-size: 1rem !important;
+  }
+  .production-timeline {
+    width: 500px;
+  }
+  .production-timeline h2 {
+    font-size: 3rem;
+  }
+  .production-timeline div.card {
+    max-width: 80%;
+    margin-left: 2rem;
+  }
+  .production-timeline .timeline-block-header {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .production-timeline h5.timeline-block-subheader {
+    font-size: 1.6rem;
+  }
+  .production-timeline li,
+.production-timeline p {
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 535px) {
+  .production-timeline {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .production-timeline {
+    width: 350px;
+  }
+  .production-timeline .card {
+    max-width: 98%;
+  }
+}
+@media all and (max-width: 330px) {
+  .production-timeline {
+    width: 270px;
+  }
+  .production-timeline h2 {
+    font-size: 2rem;
+  }
+  .production-timeline h3.timeline-block-header {
+    margin-top: 5rem;
+  }
+  .production-timeline .card {
+    max-width: 100%;
+  }
+  .production-timeline .card p,
+.production-timeline .card li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
 footer {
   /* Layout */
   height: 20rem;

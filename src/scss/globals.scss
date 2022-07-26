@@ -21,7 +21,8 @@
 @use '../components/portfolio/portfolio';
 @use '../components/portfolio/card';
 
-@use './components/timeline/productiontimeline';
+// Timeline Page
+@use '../components/timeline/productiontimeline';
 
 // Foooter Components
 @use '../components/footer/footer';
