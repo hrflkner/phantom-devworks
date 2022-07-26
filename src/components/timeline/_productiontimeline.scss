@@ -1,0 +1,278 @@
+@use '../../scss/util/variables' as v;
+
+.production-timeline {
+    /* Layout */
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    & * {
+        /* General Typography */
+        font-family: Fredoka, serif;
+        line-height: 2;
+    }
+    h2 {
+        /* Typography */
+        color: v.$candyBlue;
+        font-size: 4rem;
+        padding-bottom: 1rem;
+
+        /* Design */
+        border-bottom: 2px solid v.$candyRed;
+    }
+    p {
+        /* Layout */
+        display: block;
+        max-width: 95%;
+        margin: 0 auto;
+        padding-left: 2rem;
+        text-align: left;
+
+        /* Typography */
+        font-size: 1.8rem;
+        line-height: 1.5;
+
+        /* Split Paragraph Blocks */
+        &:first-of-type {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    /* Timeline Card Styles 
+    ------------------------*/
+    .timeline-block-header {
+        /* Layout  */
+        margin: 0 auto 2rem;
+
+        /* Typography */
+        color: v.$candyRed;
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .timeline-block-subheader {
+        font-size: 2.2rem;
+    }
+    .timeline-block-list {
+        font-size: 1.8rem;
+
+        li {
+            /* Layout */
+            margin-left: 1rem;
+
+            /* Design */
+            list-style: inside;
+        }
+    }
+
+    /* Quote Link */
+    .sample-quote {
+        /* Layout */
+        display: block;
+        margin: 2rem auto 0;
+
+        /* Typography */
+        color: v.$highlighterYellow !important;
+        font-size: 1.6rem;
+    }
+
+    .code-img {
+        /* Layout */
+        max-width: 100%;
+        margin: 0 2rem 2rem;
+
+        /* Design */
+        border: 1px solid white;
+        border-radius: 20px !important;
+    }
+}
+
+/* Custom Timeline Styles
+    Class Names Provided in react-timeline Package
+-----------------------------------------------------*/
+.timeline {
+    /* Layout */
+    width: 100%;
+
+    .container {
+        /* Layout */
+        width: 100%;
+        padding: 0;
+        margin-bottom: 6rem;
+
+        /* Design */
+        border-bottom: 2px solid v.$candyRed;
+
+        /* Layout */
+        .events {
+            padding: 5rem 0;
+        }
+    }
+
+    .card {
+        /* Layout */
+        height: fit-content !important;
+
+        /* Card Padding Fix (important overwrite)
+        -------------------------------------------*/
+        padding: 4rem 2rem !important;
+        background-color: rgb(1, 51, 58) !important;
+        border: 2px ridge v.$candyRed;
+    }
+
+    .date-container {
+        /* Fix for Default Spacing (important overwrite)
+        -------------------------------------------*/
+        height: 0;
+        margin-bottom: 0 !important;
+
+        .date {
+            /* Layout */
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+
+            /* Typography */
+            color: v.$candyRed;
+            font-size: 1.6rem;
+
+            /* Design */
+            background-color: black;
+            border: 2px solid v.$candyBlue;
+        }
+    }
+    span.marker {
+        background-color: v.$candyRed;
+        border: solid 2px v.$candyBlue;
+    }
+    .container {
+        background-color: transparent; // rgb(0, 54, 49);
+    }
+    .container::after {
+        background-color: v.$candyBlue;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .production-timeline {
+        width: 800px;
+
+        .timeline-block-header {
+            font-size: 2.5rem;
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        p {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (max-width: 850px) {
+    .production-timeline {
+        width: 700px;
+
+        div.card {
+            max-width: 90%;
+            margin-left: 2rem;
+        }
+        .timeline-block-header {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        h5.timeline-block-subheader {
+            font-size: 1.8rem;
+        }
+        li,
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media all and (max-width: 770px) {
+    .production-timeline {
+        div.card {
+            max-width: 80%;
+            margin-left: 2rem;
+        }
+        p {
+            margin-left: 0;
+        }
+    }
+    span.marker {
+        margin-right: -20px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .date {
+        font-size: 1rem !important;
+    }
+    .production-timeline {
+        width: 500px;
+
+        h2 {
+            font-size: 3rem;
+        }
+        div.card {
+            max-width: 80%;
+            margin-left: 2rem;
+        }
+        .timeline-block-header {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        h5.timeline-block-subheader {
+            font-size: 1.6rem;
+        }
+        li,
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media all and (max-width: 535px) {
+    .production-timeline {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .production-timeline {
+        width: 350px;
+
+        .card {
+            max-width: 98%;
+        }
+    }
+}
+
+@media all and (max-width: 330px) {
+    .production-timeline {
+        width: 270px;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3.timeline-block-header {
+            margin-top: 5rem;
+        }
+
+        .card {
+            max-width: 100%;
+            p,
+            li {
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
