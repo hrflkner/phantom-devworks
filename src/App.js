@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import { About } from './pages/About';
 import { Timeline } from './pages/Timeline';
 import { Portfolio } from './pages/Portfolio';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 import './css/globals.css';
 

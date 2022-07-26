@@ -2,9 +2,9 @@
 @forward './util/variables';
 @forward './util/animations';
 
-// Header and NavBar
-@use '../components/header/navbar';
+// Header and NavBar Components
 @use '../components/header/header';
+@use '../components/header/navbar';
 
 @use './components/quoteform/backdrop';
 @use './components/quoteform/contactpopup';
@@ -19,4 +19,5 @@
 
 @use './components/timeline/productiontimeline';
 
-@use './components/footer';
+// Foooter Components
+@use '../components/footer/footer';

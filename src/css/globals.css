@@ -331,6 +331,26 @@ body {
           animation: candyAnimation 5s ease-in infinite;
 }
 
+header {
+  /* Layout */
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 4vw;
+}
+
+.logo-block {
+  display: flex;
+}
+
+.logo-ghost {
+  height: 13rem;
+  width: auto;
+  max-width: 32rem;
+  margin: -1rem 1rem 0 -4rem;
+}
+
 nav {
   /* Layout */
   max-width: 428px !important;
@@ -411,26 +431,6 @@ nav {
   color: #ff8e8e;
   /* Design */
   border-color: #00d8d8;
-}
-
-header {
-  /* Layout */
-  position: relative;
-  z-index: 9999;
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem 4vw;
-}
-
-.logo-block {
-  display: flex;
-}
-
-.logo-ghost {
-  height: 13rem;
-  width: auto;
-  max-width: 32rem;
-  margin: -1rem 1rem 0 -4rem;
 }
 
 .backdrop {
@@ -1482,6 +1482,7 @@ header {
 footer {
   /* Layout */
   height: 20rem;
+  max-width: 100%;
   margin: 20rem 5rem 10rem;
   padding: 0 5rem;
   /* General Typography */
@@ -1496,7 +1497,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "sitemap companytitle" "connect companyinfo";
-  grid-gap: 2.5rem 40rem;
+  grid-gap: 2.5rem 0;
+  justify-content: space-between;
   /* Layout */
   padding: 2.5rem 0;
   /* Design */
@@ -1622,4 +1624,33 @@ footer {
 .flex-span {
   margin: 0;
   display: flex;
+}
+
+@media all and (max-width: 1150px) {
+  footer {
+    margin: 10rem 0;
+  }
+}
+@media all and (max-width: 900px) {
+  .upper-footer h4 {
+    font-size: 2.4rem;
+  }
+  .upper-footer .blockspan {
+    font-size: 1.6rem;
+  }
+  .upper-footer .sitemap .footer-nav .footer-nav-link {
+    font-size: 1.6rem;
+  }
+  .upper-footer .connect .nav-row2 a {
+    font-size: 2.6rem;
+  }
+  .lower-footer span {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 700px) {
+  footer {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }/*# sourceMappingURL=globals.css.map */
