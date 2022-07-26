@@ -1,0 +1,102 @@
+@use '../../scss/util/variables' as v;
+
+.portfolio {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Portfolio Header Styles
+-------------------------------------------*/
+.portfolio-header {
+    /* Layout */
+    position: relative;
+    z-index: 502;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    /* Design */
+    border-bottom: 2px solid v.$candyBlue;
+
+    .portfolio-title {
+        /* Typography */
+        color: v.$candyRed;
+        font-size: 4rem;
+        font-family: Fredoka, serif;
+    }
+
+    span {
+        /* Typography */
+        color: v.$candyRed;
+        font-size: 2rem;
+        font-family: Fredoka, serif;
+    }
+}
+
+// Responsive Portfolio
+
+@media all and (max-width: 1400px) {
+    .portfolio {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .portfolio {
+        width: 88%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .portfolio {
+        div.title-container {
+            bottom: 0rem;
+            padding: 1rem 2rem 1rem;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .card {
+            height: 300px !important;
+            margin-bottom: 2rem;
+        }
+        div.card-image-container {
+            height: 280px;
+            width: 100%;
+        }
+    }
+    .portfolio-header {
+        .portfolio-title {
+            /* Typography */
+            font-size: 2rem;
+        }
+        span {
+            /* Typography */
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    .portfolio {
+        .card {
+            height: 300px !important;
+        }
+        div.title-container {
+            bottom: 0rem;
+        }
+    }
+}
+
+@media all and (max-width: 380px) {
+    .portfolio-header {
+        .portfolio-title {
+            /* Typography */
+            font-size: 1.6rem;
+        }
+        span {
+            /* Typography */
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Card({ id, title, category, demolink }) {
     return (
-        <li className="card driveway-panel driveway-panel--focus">
+        <li className="card card-list-panel card-list-panel--focus">
             <a
                 href={`${demolink}`}
                 className="demolink"
@@ -43,12 +43,12 @@ function Card({ id, title, category, demolink }) {
 
 function PortfolioList({ selectedId }) {
     return (
-        <>
+        <section className="portfolio">
             <section className="portfolio-header">
                 <h3 className="portfolio-title">Portfolio</h3>
                 <span>Click any entry for a live demo!</span>
             </section>
-            <ul className="card-list driveway">
+            <ul className="card-list">
                 {items.map((card) => (
                     <Card
                         key={card.id}
@@ -57,11 +57,11 @@ function PortfolioList({ selectedId }) {
                     />
                 ))}
                 <div
-                    className="driveway__focus-curtain"
+                    className="card-list__focus-curtain"
                     aria-hidden="true"
                 ></div>
             </ul>
-        </>
+        </section>
     );
 }
 
