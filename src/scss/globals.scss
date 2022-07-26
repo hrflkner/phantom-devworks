@@ -11,8 +11,10 @@
 @use '../components/quoteform/contactpopup';
 
 @use './components/subheader';
-@use './components/newsiteoption';
-@use './components/upgradesiteoption';
+
+// Homepage Options
+@use '../components/homeoptions/newsiteoption';
+@use '../components/homeoptions/upgradesiteoption';
 
 // Shared Components
 @use '../components/shared/background/background';
