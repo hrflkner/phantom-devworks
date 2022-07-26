@@ -30,7 +30,7 @@ function UpgradeSiteOption() {
                             alt=""
                         />
                     </section>
-                    <h4>Today's must-haves:</h4>
+                    <h4>Today's Essentials:</h4>
                     <dl>
                         <dt className="fadeInRight">Responsiveness</dt>
                         <dd className="fadeInLeft">

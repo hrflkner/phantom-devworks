@@ -313,6 +313,9 @@
             }
         }
     }
+    img.main-background-1 {
+        margin-left: -2rem;
+    }
     .upgrade-secondary {
         width: 100%;
         padding: 0 0.5rem;
@@ -323,6 +326,42 @@
         .upgrade-secondary-imgblock {
             img {
                 height: 15rem;
+            }
+        }
+    }
+}
+@media all and (max-width: 350px) {
+    .upgrade-openingcall {
+        width: 250px;
+        text-align: center;
+        h2 {
+            font-size: 2.6rem;
+        }
+        h4 {
+            font-size: 2.4rem;
+        }
+        dl {
+            width: 240px;
+            padding: 0.5rem 0;
+            dt {
+                text-align: left;
+                font-size: 1.8rem;
+                border-left: none;
+                padding-left: 0;
+            }
+            dd {
+                text-align: left;
+                padding-top: 5rem;
+                margin-left: -12rem;
+            }
+        }
+        .trial-section-image {
+            margin: 4rem 0; //4rem auto 8rem;
+            height: 10rem;
+
+            &:nth-of-type(2) {
+                margin-left: -1rem;
+                margin-top: 4rem;
             }
         }
     }
