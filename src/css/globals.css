@@ -1426,7 +1426,10 @@ nav {
 .production-timeline .code-img {
   /* Layout */
   max-width: 100%;
-  margin: 0 2rem 2rem;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto 2rem;
   /* Design */
   border: 1px solid white;
   border-radius: 20px !important;
@@ -1570,6 +1573,10 @@ nav {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 400px;
+  }
+  .production-timeline .code-img {
+    /* Layout */
+    height: 200px;
   }
 }
 @media all and (max-width: 400px) {
