@@ -11,7 +11,9 @@
 @use './components/subheader';
 @use './components/newsiteoption';
 @use './components/upgradesiteoption';
-@use './components/background';
+
+// Shared Components
+@use '../components/shared/background/background';
 
 // Portfolio Page
 @use '../components/portfolio/portfolio';
