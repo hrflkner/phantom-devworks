@@ -5,14 +5,16 @@ function Header() {
     return (
         <>
             <header>
-                <section className="logo-block fadeIn">
-                    <img
-                        className="logo-ghost"
-                        height="130"
-                        width="318"
-                        src={LogoGhost}
-                        alt="Logo Ghost"
-                    />
+                <section className="logo-block">
+                    <a href="/">
+                        <img
+                            className="logo-ghost"
+                            height="130"
+                            width="318"
+                            src={LogoGhost}
+                            alt="Logo Ghost"
+                        />
+                    </a>
                 </section>
                 <NavBar />
             </header>
