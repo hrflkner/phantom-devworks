@@ -1,6 +1,6 @@
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import mainBackgroundOne from '../images/phantom-dev-works-main3.png';
-import mainBackgroundTwo from '../images/phantom-dev-works-secondary.webp';
+import mainBackgroundOne from '../../../images/upper-ghostpaint-background.webp';
+import mainBackgroundTwo from '../../../images/lower-ghostpaint-background.webp';
 
 function Background({ children }) {
     const { scrollYProgress } = useViewportScroll();
@@ -11,11 +11,6 @@ function Background({ children }) {
     return (
         <>
             <motion.section
-                // className="background-block"
-                // variants={variants}
-                // animate={inView ? 'visible' : 'hidden'}
-                // transition={{ duration: 2, ease: 'easeOut' }}
-                // ref={ref}
                 style={{ opacity: opacity, x: offsetX, y: offsetY }}
             >
                 <img

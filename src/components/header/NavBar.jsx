@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import SocialLinksBar from './SocialLinksBar';
-import ContactPopUpForm from './quoteform/ContactPopUp';
+import SocialLinksBar from '../shared/SocialLinksBar';
+import ContactPopUpForm from '../quoteform/ContactPopUp';
 
 function NavBar() {
     const [contactOpen, setContactOpen] = useState(false);

@@ -1,8 +1,8 @@
-@use '../util/variables' as v;
+@use '../../scss/util/variables' as v;
 
 .subheader {
     /* Layout */
-    width: 68vw;
+    width: 132rem;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -20,16 +20,16 @@
         /* Typography */
         color: white;
         font-family: 'Dosis', sans-serif;
-        font-size: 3.8vw;
-        margin-bottom: 2vw;
+        font-size: 7.2rem;
+        margin-bottom: 4rem;
     }
     h4 {
         /* Layout */
-        padding: 0.25vw 0.5vw;
+        padding: 0.5rem 1rem;
         margin: 0 auto;
 
         /* Typography */
-        font-size: 2.6vw;
+        font-size: 5rem;
         font-weight: 900;
         -webkit-text-stroke: 1px white;
         //text-stroke: 1px white;
@@ -37,23 +37,23 @@
     p {
         color: white;
         font-family: 'Dosis', sans-serif;
-        font-size: 1.2vw;
+        font-size: 2.4rem;
         font-weight: 500;
         line-height: 1.5;
-        padding: 1.2vw 2vw;
+        padding: 2.4rem 3.8rem;
     }
 }
 .subheader-optionblock {
     /* Layout */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw 5vw;
+    grid-gap: 3rem 10rem;
     justify-content: center;
-    margin: 1vw 0;
+    margin: 2rem 0;
 }
 
 /* Darken Paragraph Background (readability) 
-   Alternate Colored Borders
+    Alternate Colored Borders
 -------------------------------------------*/
 .option1 > p {
     background: black; //radial-gradient(rgba(0, 0, 0, 0.5) 20%, black);
@@ -71,7 +71,7 @@
 .option1,
 .option2 {
     /* Layout */
-    height: 22vw;
+    height: 43rem;
     width: 100%;
     display: grid;
     grid-gap: 1rem;
@@ -95,13 +95,13 @@
 
     button {
         /* Typography */
-        font-size: 1vw;
+        font-size: 2rem;
     }
 
     /* Option 1 Link */
     a {
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 2rem;
         font-family: Fredoka, serif;
         font-weight: 400;
     }
@@ -158,9 +158,9 @@
     /* Layout */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    margin-top: 2vw;
+    margin-top: 4rem;
 }
 .portfolio-link {
     /* Typography */
@@ -172,9 +172,6 @@
         font-weight: 900;
     }
 }
-.copyright-block {
-    font-size: 1vw;
-}
 
 /* Return Button (Post-UserChoice Render)
 -------------------------------------------*/
@@ -182,10 +179,9 @@
     /* Layout */
     width: 100%;
     height: max-content;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -3vw;
-    padding-right: 4vw;
+    text-align: right;
+    margin-top: -6rem;
+    padding-right: 7rem;
 
     button:hover {
         /* Typography */
@@ -193,5 +189,120 @@
 
         /* Design */
         border-color: v.$candyBlue;
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .subheader {
+        width: 100rem;
+
+        .option1,
+        .option2 {
+            /* Layout */
+            height: 38rem;
+
+            a,
+            button {
+                font-size: 1.6rem;
+            }
+        }
+
+        h2 {
+            font-size: 5rem;
+        }
+        h4 {
+            font-size: 3.6rem;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .subheader {
+        width: 85rem;
+
+        .subheader-optionblock {
+            grid-gap: 3rem 5rem;
+        }
+
+        .option1,
+        .option2 {
+            /* Layout */
+            height: 28rem;
+            grid-gap: 0;
+
+            a,
+            button {
+                font-size: 1.4rem;
+            }
+        }
+
+        h2 {
+            font-size: 4.2rem;
+        }
+        h4 {
+            font-size: 3.2rem;
+        }
+        p {
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+        }
+    }
+    .portfolio-link {
+        /* Typography */
+        font-size: 3rem;
+    }
+    .option-footer {
+        margin-top: 2rem;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .subheader {
+        width: 65rem;
+
+        .subheader-optionblock {
+            width: 40rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 4rem;
+        }
+
+        .option1,
+        .option2 {
+            /* Layout */
+            height: 28rem;
+            grid-gap: 0;
+
+            a,
+            button {
+                font-size: 1.2rem;
+            }
+        }
+
+        h2 {
+            font-size: 3.6rem;
+            margin-bottom: 2rem;
+        }
+        h4 {
+            font-size: 3rem;
+        }
+        p {
+            padding: 2rem 1rem;
+            font-size: 1.6rem;
+        }
+    }
+    .portfolio-link {
+        /* Typography */
+        font-size: 3rem;
+    }
+    .return-btn {
+        margin-top: -4rem;
+        padding-right: 2rem;
+        button {
+            font-size: 1.2rem;
+        }
     }
 }

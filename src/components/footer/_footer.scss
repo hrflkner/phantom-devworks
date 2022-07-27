@@ -1,9 +1,10 @@
-@use '../util/variables' as v;
+@use '../../scss/util/variables' as v;
 
 footer {
     /* Layout */
     height: 20rem;
-    margin: 20rem 5rem 10rem;
+    max-width: 100%;
+    margin: 10rem 5rem;
     padding: 0 5rem;
 
     /* General Typography */
@@ -20,7 +21,8 @@ footer {
     grid-template-areas:
         'sitemap companytitle'
         'connect companyinfo';
-    grid-gap: 2.5rem 40rem;
+    grid-gap: 2.5rem 0;
+    justify-content: space-between;
 
     /* Layout */
     padding: 2.5rem 0;
@@ -125,7 +127,7 @@ footer {
 .lower-footer {
     /*Layout*/
     margin: 0 auto;
-    padding: 2rem 0 5rem;
+    padding: 2rem 0 2rem;
 
     /* Design */
     border-top: 1px solid rgba(255, 255, 255, 0.35);
@@ -162,4 +164,48 @@ footer {
 .flex-span {
     margin: 0;
     display: flex;
+}
+
+// Responsive Styles
+@media all and (max-width: 1150px) {
+    footer {
+        margin: 5rem 0;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .upper-footer {
+        h4 {
+            font-size: 2.4rem;
+        }
+        .blockspan {
+            font-size: 1.6rem;
+        }
+        .sitemap {
+            .footer-nav {
+                .footer-nav-link {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .connect {
+            .nav-row2 {
+                a {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+    .lower-footer {
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    footer {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }

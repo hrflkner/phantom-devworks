@@ -1,4 +1,4 @@
-import DesignerGraphic from '../images/ar-designer.svg';
+import DesignerGraphic from '../../images/ar-designer.svg';
 
 function NewSiteOption() {
     return (

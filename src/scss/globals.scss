@@ -2,18 +2,30 @@
 @forward './util/variables';
 @forward './util/animations';
 
-@use './components/quoteform/backdrop';
-@use './components/quoteform/contactpopup';
-@use './components/navbar';
-@use './components/header';
-@use './components/subheader';
-@use './components/newsiteoption';
-@use './components/upgradesiteoption';
-@use './components/background';
+// Header and NavBar Components
+@use '../components/header/header';
+@use '../components/header/navbar';
 
-@use './components/portfolio/portfolio';
-@use './components/portfolio/card';
+// HomePage Landing Component
+@use '../components/homelanding/landing';
 
-@use './components/timeline/productiontimeline';
+// Homepage Options
+@use '../components/homeoptions/newsiteoption';
+@use '../components/homeoptions/upgradesiteoption';
 
-@use './components/footer';
+// Quote Form Component
+@use '../components/quoteform/backdrop';
+@use '../components/quoteform/contactpopup';
+
+// Shared Components
+@use '../components/shared/background/background';
+
+// Portfolio Page
+@use '../components/portfolio/portfolio';
+@use '../components/portfolio/card';
+
+// Timeline Page
+@use '../components/timeline/productiontimeline';
+
+// Foooter Components
+@use '../components/footer/footer';

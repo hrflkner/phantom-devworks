@@ -1,4 +1,4 @@
-@use '../../util/variables' as v;
+@use '../../scss/util/variables' as v;
 
 .portfolio {
     .screen {
@@ -172,7 +172,7 @@
     // end demo theme
     //colors
     $black: #000;
-    .driveway {
+    .card-list {
         &__focus-curtain {
             background-color: $black;
             transition: opacity 0.25s ease-in-out;
@@ -194,7 +194,7 @@
             &--focus {
                 position: relative;
                 &:hover {
-                    ~ .driveway__focus-curtain {
+                    ~ .card-list__focus-curtain {
                         opacity: 0.8;
                         z-index: 500;
                     }

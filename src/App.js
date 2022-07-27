@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header';
+import Header from './components/header/Header';
 import HomePage from './pages/HomePage';
 import { About } from './pages/About';
 import { Timeline } from './pages/Timeline';
 import { Portfolio } from './pages/Portfolio';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 
 import './css/globals.css';
 

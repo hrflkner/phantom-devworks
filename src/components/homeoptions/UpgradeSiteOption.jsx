@@ -1,12 +1,12 @@
-import Background from './Background';
+import Background from '../shared/background/Background';
 
-import ShoppingSVG from '../images/person-studying-online4.png';
-import Ghost4PNG from '../images/PointingGhost.png';
+import ShoppingSVG from '../../images/person-studying-online4.png';
+import Ghost4PNG from '../../images/PointingGhost.png';
 
-import ResponsiveIcon from '../images/responsive-icon.svg';
-import AccessibleIcon from '../images/accessible-icon.svg';
-import SearchableIcon from '../images/searchable-icon.svg';
-import DesignSketch from '../images/design-sketch.webp';
+import ResponsiveIcon from '../../images/responsive-icon.svg';
+import AccessibleIcon from '../../images/accessible-icon.svg';
+import SearchableIcon from '../../images/searchable-icon.svg';
+import DesignSketch from '../../images/design-sketch.webp';
 
 function UpgradeSiteOption() {
     return (
@@ -30,7 +30,7 @@ function UpgradeSiteOption() {
                             alt=""
                         />
                     </section>
-                    <h4>Today's must-haves:</h4>
+                    <h4>Today's Essentials:</h4>
                     <dl>
                         <dt className="fadeInRight">Responsiveness</dt>
                         <dd className="fadeInLeft">
