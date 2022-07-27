@@ -4,7 +4,7 @@ footer {
     /* Layout */
     height: 20rem;
     max-width: 100%;
-    margin: 20rem 5rem 10rem;
+    margin: 10rem 5rem;
     padding: 0 5rem;
 
     /* General Typography */
@@ -127,7 +127,7 @@ footer {
 .lower-footer {
     /*Layout*/
     margin: 0 auto;
-    padding: 2rem 0 5rem;
+    padding: 2rem 0 2rem;
 
     /* Design */
     border-top: 1px solid rgba(255, 255, 255, 0.35);
@@ -169,11 +169,11 @@ footer {
 // Responsive Styles
 @media all and (max-width: 1150px) {
     footer {
-        margin: 10rem 0;
+        margin: 5rem 0;
     }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 950px) {
     .upper-footer {
         h4 {
             font-size: 2.4rem;

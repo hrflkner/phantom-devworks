@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
-import { siteOptionContext } from '../helpers/Context';
+import { siteOptionContext } from '../../helpers/Context';
 
-function SubHeader() {
+function Landing() {
     const { displayOption, setDisplayOption } = useContext(siteOptionContext);
 
     return (
@@ -96,11 +96,6 @@ function SubHeader() {
                             </a>
                             !
                         </span>
-                        <section className="copyright-block">
-                            <span>
-                                &#169; 2022 - Hunter Faulkner &amp; Jiayi Liao
-                            </span>
-                        </section>
                     </section>
                 </section>
             ) : (
@@ -125,4 +120,4 @@ function SubHeader() {
     );
 }
 
-export default SubHeader;
+export default Landing;
