@@ -833,7 +833,7 @@ nav {
 
 .openingcall {
   /* Layout */
-  width: 65vw;
+  width: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -846,7 +846,7 @@ nav {
   /* Typography */
   color: white;
   font-family: "Fredoka", sans-serif;
-  font-size: 4vw;
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -858,7 +858,7 @@ nav {
   width: 90%;
   /* Typography */
   color: white;
-  font-size: 1.4vw;
+  font-size: 2.4rem;
   font-family: "Fredoka", sans-serif;
   line-height: 1.6;
   /* Design */
@@ -880,6 +880,7 @@ nav {
 
 .blurb-grid {
   /* Layout */
+  display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-gap: 2rem;
   /* Typography */
@@ -896,6 +897,86 @@ nav {
   width: 100%;
 }
 
+@media all and (max-width: 1050px) {
+  .openingcall {
+    width: 80%;
+  }
+  .openingcall h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  .openingcall p {
+    /* Typography */
+    width: 100%;
+  }
+  .blurb {
+    /* Layout */
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+    /* Typography */
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+  .blurb-grid {
+    grid-template-columns: 1fr 0.5fr;
+    grid-gap: 0rem;
+    padding-bottom: 3rem;
+    /* Typography */
+    line-height: 2;
+  }
+  .designer-graphic img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 750px) {
+  .openingcall {
+    width: 80%;
+  }
+  .openingcall h2 {
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+  }
+  .blurb-grid {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .designer-graphic img {
+    width: 500px;
+  }
+}
+@media all and (max-width: 450px) {
+  .designer-graphic img {
+    width: 350px;
+  }
+}
+@media all and (max-width: 350px) {
+  .openingcall {
+    width: 90%;
+  }
+  .openingcall h2 {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+  .openingcall p {
+    /* Typography */
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .blurb-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+    padding-bottom: 3rem;
+    /* Typography */
+    line-height: 2;
+  }
+  .designer-graphic img {
+    width: 300px;
+  }
+}
 .upgrade-openingcall {
   /* Layout */
   width: 110rem;
