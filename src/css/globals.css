@@ -356,6 +356,15 @@ header {
   margin: -1rem 1rem 0 -4rem;
 }
 
+@media all and (max-width: 950px) {
+  header {
+    margin: 3rem 2rem;
+  }
+  .logo-ghost {
+    height: 8rem;
+    margin: 0rem;
+  }
+}
 nav {
   /* Layout */
   max-width: 428px !important;
@@ -438,6 +447,18 @@ nav {
   border-color: #00d8d8;
 }
 
+@media all and (max-width: 950px) {
+  .nav-row1 a {
+    padding-top: 0;
+    font-size: 1.6rem;
+  }
+  .nav-row2 .social-icon {
+    font-size: 2.8rem;
+  }
+  .nav-row2 .quote-btn {
+    font-size: 1.2rem;
+  }
+}
 .subheader {
   /* Layout */
   width: 132rem;
@@ -721,6 +742,13 @@ nav {
   .portfolio-link {
     /* Typography */
     font-size: 3rem;
+  }
+  .return-btn {
+    margin-top: -4rem;
+    padding-right: 2rem;
+  }
+  .return-btn button {
+    font-size: 1.2rem;
   }
 }
 .openingcall {
