@@ -6,15 +6,16 @@
 @use '../components/header/header';
 @use '../components/header/navbar';
 
-// Quote Form Component
-@use '../components/quoteform/backdrop';
-@use '../components/quoteform/contactpopup';
-
-@use './components/subheader';
+// HomePage Landing Component
+@use '../components/homelanding/landing';
 
 // Homepage Options
 @use '../components/homeoptions/newsiteoption';
 @use '../components/homeoptions/upgradesiteoption';
+
+// Quote Form Component
+@use '../components/quoteform/backdrop';
+@use '../components/quoteform/contactpopup';
 
 // Shared Components
 @use '../components/shared/background/background';
