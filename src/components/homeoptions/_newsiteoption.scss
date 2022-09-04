@@ -132,10 +132,28 @@
     }
 }
 
+@media all and (max-width: 660px) {
+    .openingcall {
+        h2 {
+            font-size: 3.2rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
 @media all and (max-width: 450px) {
     .designer-graphic {
         img {
             width: 350px;
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .openingcall {
+        h2 {
+            font-size: 2.6rem;
         }
     }
 }
