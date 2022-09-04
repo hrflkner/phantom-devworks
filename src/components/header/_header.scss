@@ -25,3 +25,13 @@ header {
         margin: 0rem;
     }
 }
+
+@media all and (max-width: 550px) {
+    header {
+        margin: 2rem 1rem;
+    }
+    .logo-ghost {
+        height: 6rem;
+        margin: 0rem;
+    }
+}
