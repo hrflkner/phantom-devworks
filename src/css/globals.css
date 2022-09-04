@@ -332,8 +332,8 @@ body {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-  -webkit-animation: candyAnimation 5s ease-in infinite;
-          animation: candyAnimation 5s ease-in infinite;
+  -webkit-animation: candyAnimation 10s ease-in infinite;
+          animation: candyAnimation 10s ease-in infinite;
 }
 
 header {
@@ -457,6 +457,11 @@ nav {
   }
   .nav-row2 .quote-btn {
     font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 575px) {
+  nav {
+    display: none;
   }
 }
 .subheader {
@@ -749,6 +754,43 @@ nav {
   }
   .return-btn button {
     font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 700px) {
+  .subheader {
+    width: 50rem;
+    margin: 0 auto;
+  }
+  .subheader h2 {
+    font-size: 2.8rem;
+  }
+  .subheader .portfolio-link {
+    font-size: 2.8rem;
+  }
+}
+@media all and (max-width: 575px) {
+  .subheader {
+    width: 30rem;
+  }
+  .subheader h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+  .subheader .portfolio-link {
+    font-size: 2.4rem;
+    margin-top: -12rem;
+  }
+  .subheader .subheader-optionblock {
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .subheader .option1,
+.subheader .option2 {
+    scale: 0.75;
+  }
+  .subheader .option2 {
+    margin-top: -4rem;
   }
 }
 .openingcall {
@@ -2184,7 +2226,93 @@ footer {
 }
 @media all and (max-width: 700px) {
   footer {
+    margin: 5rem auto 0;
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+@media all and (max-width: 625px) {
+  .upper-footer {
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0;
+  }
+  .upper-footer > * {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .upper-footer .company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 10rem;
+  }
+  .upper-footer .company-info .blockspan:last-of-type {
+    font-size: 1.2rem;
+  }
+  .upper-footer .connect {
+    grid-template-rows: repeat(auto, 2);
+  }
+  .upper-footer .connect h4 {
+    line-height: 1;
+    padding-bottom: 0.5rem;
+  }
+  .upper-footer .sitemap {
+    gap: 0;
+  }
+  .upper-footer .sitemap h4 {
+    padding-bottom: 0.5rem;
+  }
+  .upper-footer .sitemap .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+  }
+  .upper-footer .sitemap .footer-nav .footer-nav-link {
+    display: inline-block;
+    margin: 0 0 1rem 0;
+  }
+  .upper-footer .sitemap .footer-nav li:last-of-type .footer-nav-link {
+    margin-bottom: 0;
+  }
+  .upper-footer .sitemap .footer-nav .point-separator {
+    display: none;
+  }
+}
+@media all and (max-width: 500px) {
+  .upper-footer .blockspan:last-of-type {
+    display: none;
+  }
+}
+@media all and (max-width: 455px) {
+  .upper-footer {
+    /* Main Grid Layout */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "companytitle" "connect";
+    grid-gap: 0;
+    align-items: center;
+    padding: 0.1rem 0 0.5rem;
+  }
+  .upper-footer .sitemap,
+.upper-footer .company-info {
+    display: none;
+  }
+  .upper-footer .connect,
+.upper-footer .company-title {
+    margin: 0 auto;
+  }
+  .upper-footer .connect h4 {
+    font-size: 2rem;
+  }
+  .upper-footer .connect li a {
+    font-size: 1.2rem;
+  }
+  .upper-footer .company-title h4 {
+    font-size: 2rem;
+  }
+  .upper-footer .company-title > span:first-of-type {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=globals.css.map */

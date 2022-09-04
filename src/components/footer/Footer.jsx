@@ -14,7 +14,9 @@ function Footer() {
                                     Home
                                 </Link>
                             </li>
-                            <span aria="hidden">&#8226;</span>
+                            <span className="point-separator" aria="hidden">
+                                &#8226;
+                            </span>
                             <li>
                                 <a
                                     className="footer-nav-link"
@@ -25,7 +27,9 @@ function Footer() {
                                     About
                                 </a>
                             </li>
-                            <span aria="hidden">&#8226;</span>
+                            <span className="point-separator" aria="hidden">
+                                &#8226;
+                            </span>
                             <li>
                                 <Link
                                     className="footer-nav-link"
@@ -34,7 +38,9 @@ function Footer() {
                                     Timeline
                                 </Link>
                             </li>
-                            <span aria="hidden">&#8226;</span>
+                            <span className="point-separator" aria="hidden">
+                                &#8226;
+                            </span>
                             <li>
                                 <Link
                                     className="footer-nav-link"
