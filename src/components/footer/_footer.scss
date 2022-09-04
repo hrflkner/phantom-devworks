@@ -205,7 +205,111 @@ footer {
 
 @media all and (max-width: 700px) {
     footer {
+        margin: 5rem auto 0;
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+}
+
+@media all and (max-width: 625px) {
+    .upper-footer {
+        grid-template-rows: 1fr 0.5fr;
+        gap: 0;
+
+        & > * {
+            height: max-content;
+        }
+
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            max-height: 10rem;
+
+            .blockspan:last-of-type {
+                font-size: 1.2rem;
+            }
+        }
+        .connect {
+            grid-template-rows: repeat(auto, 2);
+
+            h4 {
+                line-height: 1;
+                padding-bottom: 0.5rem;
+            }
+        }
+        .sitemap {
+            gap: 0;
+
+            h4 {
+                padding-bottom: 0.5rem;
+            }
+            .footer-nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 4rem;
+
+                .footer-nav-link {
+                    display: inline-block;
+                    margin: 0 0 1rem 0;
+                }
+                li:last-of-type .footer-nav-link {
+                    margin-bottom: 0;
+                }
+
+                .point-separator {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .upper-footer {
+        .blockspan:last-of-type {
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 455px) {
+    .upper-footer {
+        /* Main Grid Layout */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'companytitle'
+            'connect';
+        grid-gap: 0;
+        align-items: center;
+
+        padding: 0.1rem 0 0.5rem;
+
+        .sitemap,
+        .company-info {
+            display: none;
+        }
+        .connect,
+        .company-title {
+            margin: 0 auto;
+        }
+        .connect {
+            h4 {
+                font-size: 2rem;
+            }
+            li a {
+                font-size: 1.2rem;
+            }
+        }
+        .company-title {
+            h4 {
+                font-size: 2rem;
+            }
+            & > span:first-of-type {
+                font-size: 1.2rem;
+            }
+        }
     }
 }

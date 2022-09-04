@@ -9,7 +9,7 @@ function Landing() {
         <>
             {displayOption.menu ? (
                 <section className="subheader">
-                    <h2 className="">
+                    <h2>
                         How can we help build your{' '}
                         <span className="candy-animation">web presence</span>?
                     </h2>
