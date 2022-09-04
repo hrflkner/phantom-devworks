@@ -41,9 +41,10 @@
     }
 
     .trial-section {
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-content: center;
+        overflow-x: hidden !important;
     }
     .trial-section-image {
         margin: 4rem 0; //4rem auto 8rem;
@@ -242,9 +243,6 @@
 @media all and (max-width: 520px) {
     .upgrade-openingcall {
         width: 350px;
-        h2 {
-            font-size: 3.2rem;
-        }
         h4 {
             font-size: 2.8rem;
         }

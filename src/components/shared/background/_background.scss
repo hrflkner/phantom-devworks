@@ -2,6 +2,10 @@
     position: relative;
     height: max-content;
 }
+.background-container {
+    width: 100vw !important;
+    overflow-x: hidden;
+}
 .main-background-1 {
     position: relative;
     width: 100vw;

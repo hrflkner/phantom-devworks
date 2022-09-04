@@ -9,7 +9,7 @@ function Background({ children }) {
     const offsetY = useTransform(scrollYProgress, [0.4, 0.5], [300, 0]);
 
     return (
-        <>
+        <section className="background-container">
             <motion.section
                 style={{ opacity: opacity, x: offsetX, y: offsetY }}
             >
@@ -25,7 +25,7 @@ function Background({ children }) {
                 src={mainBackgroundTwo}
                 alt="Main Background 2"
             />
-        </>
+        </section>
     );
 }
 

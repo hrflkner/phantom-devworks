@@ -148,7 +148,7 @@ html {
 
 body {
   /* Layout */
-  max-width: 2000px;
+  max-width: min(2000px, 100vw) !important;
   overflow-x: hidden;
   /* Design */
   background-color: black;
@@ -919,9 +919,21 @@ nav {
     width: 500px;
   }
 }
+@media all and (max-width: 660px) {
+  .openingcall h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
 @media all and (max-width: 450px) {
   .designer-graphic img {
     width: 350px;
+  }
+}
+@media all and (max-width: 420px) {
+  .openingcall h2 {
+    font-size: 2.6rem;
   }
 }
 @media all and (max-width: 350px) {
@@ -984,9 +996,10 @@ nav {
   font-style: italic;
 }
 .upgrade-infoblock .trial-section {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  overflow-x: hidden !important;
 }
 .upgrade-infoblock .trial-section-image {
   margin: 4rem 0;
@@ -1169,9 +1182,6 @@ nav {
 @media all and (max-width: 520px) {
   .upgrade-openingcall {
     width: 350px;
-  }
-  .upgrade-openingcall h2 {
-    font-size: 3.2rem;
   }
   .upgrade-openingcall h4 {
     font-size: 2.8rem;
@@ -1493,6 +1503,11 @@ nav {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.background-container {
+  width: 100vw !important;
+  overflow-x: hidden;
 }
 
 .main-background-1 {
