@@ -2291,9 +2291,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "companytitle" "connect";
-    grid-gap: 0;
+    grid-gap: 1rem 0;
     align-items: center;
-    padding: 0.1rem 0 0.5rem;
+    padding: 1.2rem 0 2rem;
   }
   .upper-footer .sitemap,
 .upper-footer .company-info {
@@ -2302,12 +2302,16 @@ footer {
   .upper-footer .connect,
 .upper-footer .company-title {
     margin: 0 auto;
+    text-align: center;
+  }
+  .upper-footer .connect {
+    gap: 0;
   }
   .upper-footer .connect h4 {
     font-size: 2rem;
   }
-  .upper-footer .connect li a {
-    font-size: 1.2rem;
+  .upper-footer .connect .nav-row2 li a {
+    font-size: 1.8rem;
   }
   .upper-footer .company-title h4 {
     font-size: 2rem;
