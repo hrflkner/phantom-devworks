@@ -586,6 +586,7 @@ nav {
   height: 3rem;
   margin: 0;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   /* Typography */
   color: white;
   font-size: 1rem;
@@ -972,6 +973,14 @@ nav {
   }
   .subheader .portfolio-link {
     font-size: 2.8rem;
+  }
+}
+@media all and (max-width: 599px) {
+  .return-btn {
+    padding-right: 1.5rem;
+  }
+  .return-btn button {
+    font-size: 1rem;
   }
 }
 @media all and (max-width: 575px) {

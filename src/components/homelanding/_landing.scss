@@ -321,6 +321,15 @@
     }
 }
 
+@media all and (max-width: 599px) {
+    .return-btn {
+        padding-right: 1.5rem;
+        button {
+            font-size: 1rem;
+        }
+    }
+}
+
 @media all and (max-width: 575px) {
     .subheader {
         width: 30rem;
