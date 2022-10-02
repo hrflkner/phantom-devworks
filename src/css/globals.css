@@ -345,10 +345,6 @@ header {
   margin: 3rem 7rem;
 }
 
-.logo-block {
-  display: flex;
-}
-
 .logo-ghost {
   height: 13rem;
   width: auto;
@@ -365,9 +361,10 @@ header {
     margin: 0rem;
   }
 }
-@media all and (max-width: 550px) {
+@media all and (max-width: 599px) {
   header {
-    margin: 2rem 1rem;
+    align-items: center;
+    margin: 2rem 0.5rem;
   }
   .logo-ghost {
     height: 6rem;
@@ -468,8 +465,208 @@ nav {
     font-size: 1.2rem;
   }
 }
-@media all and (max-width: 575px) {
-  nav {
+@media all and (max-width: 600px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+/* Color Variables
+-------------------------------------------*/
+/* Utility Classes
+-------------------------------------------*/
+/* General Component Styles */
+.btn {
+  /* Layout */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  /* Design */
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  /* Typography */
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+/* Strengthen Link Tag */
+.strength {
+  border-bottom: 3px solid white;
+}
+.strength:hover {
+  border-color: #fdff81;
+}
+
+/* Text Highlighters 
+-------------------------------------------*/
+.candy-gradient {
+  background: linear-gradient(60deg, rgb(74, 195, 211) 35%, rgb(236, 130, 130) 65%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.highlight {
+  /* Typography */
+  color: #fdff81;
+  font-weight: 500;
+}
+
+.candy-blue {
+  color: #00d8d8;
+  font-weight: 400;
+}
+
+.candy-red {
+  color: #ff8e8e;
+  font-weight: 400;
+}
+
+.mobile-header-grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-nav .nav-container {
+  /* Layout */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 205px;
+  height: 100%;
+  z-index: 10;
+  /* Design */
+  background-color: black;
+  padding-left: 0.5rem;
+}
+.mobile-nav nav {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  /* Design */
+  border-left: 3px solid white;
+  background-color: rgb(0, 0, 0);
+}
+.mobile-nav ul {
+  /* Layout */
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-nav ul a {
+  /* Layout */
+  width: 100%;
+  display: block;
+  justify-content: right;
+  /* Typography */
+  color: white;
+  font-size: 2.2rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.quote-btn {
+  /* Layout */
+  height: 3rem;
+  margin: 0;
+  margin-right: 1rem;
+  /* Typography */
+  color: white;
+  font-size: 1rem;
+}
+.quote-btn:hover {
+  /* Typography */
+  color: #ff8e8e;
+  /* Design */
+  border-color: #00d8d8;
+}
+
+.hamburger {
+  transform: scale(0.5) !important;
+  z-index: 1000;
+}
+.hamburger.is-active {
+  transform: scale(0.5) rotate(45deg) !important;
+}
+.hamburger.is-active .line {
+  background-color: #ff8e8e;
+}
+.hamburger.not-active .line {
+  background-color: #00d8d8;
+}
+
+.hamburger.is-active:before {
+  border: 3px solid #ff8e8e;
+}
+
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active {
+  transform: rotate(45deg);
+}
+
+.hamburger:before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 5px solid transparent;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active .line {
+  width: 35px;
+}
+
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(13px);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(90deg);
+}
+
+@media all and (min-width: 599px) {
+  .mobile-header-grid {
     display: none;
   }
 }

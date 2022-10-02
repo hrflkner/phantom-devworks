@@ -5,6 +5,7 @@
 // Header and NavBar Components
 @use '../components/header/header';
 @use '../components/header/navbar';
+@use '../components//header/mobilenavbar';
 
 // HomePage Landing Component
 @use '../components/homelanding/landing';
