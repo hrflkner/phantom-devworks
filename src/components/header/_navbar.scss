@@ -103,9 +103,8 @@ nav {
         }
     }
 }
-
-@media all and (max-width: 575px) {
-    nav {
+@media all and (max-width: 600px) {
+    .desktop-nav {
         display: none;
     }
 }

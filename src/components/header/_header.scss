@@ -6,9 +6,6 @@ header {
     justify-content: space-between;
     margin: 3rem 7rem;
 }
-.logo-block {
-    display: flex;
-}
 .logo-ghost {
     height: 13rem;
     width: auto;
@@ -25,10 +22,10 @@ header {
         margin: 0rem;
     }
 }
-
-@media all and (max-width: 550px) {
+@media all and (max-width: 599px) {
     header {
-        margin: 2rem 1rem;
+        align-items: center;
+        margin: 2rem 0.5rem;
     }
     .logo-ghost {
         height: 6rem;

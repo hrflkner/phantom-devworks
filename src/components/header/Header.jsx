@@ -1,5 +1,6 @@
-import NavBar from './NavBar';
 import LogoGhost from '../../images/phantom-logo.webp';
+import NavBar from './NavBar';
+import MobileNavBar from './MobileNavBar';
 
 function Header() {
     return (
@@ -17,6 +18,7 @@ function Header() {
                     </a>
                 </section>
                 <NavBar />
+                <MobileNavBar />
             </header>
         </>
     );

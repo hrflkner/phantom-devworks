@@ -10,7 +10,7 @@ function NavBar() {
     const open = () => setContactOpen(true);
 
     return (
-        <>
+        <div className="desktop-nav">
             <nav>
                 <ul className="nav-row1">
                     <li>
@@ -64,7 +64,7 @@ function NavBar() {
                     </AnimatePresence>
                 </section>
             </nav>
-        </>
+        </div>
     );
 }
 
